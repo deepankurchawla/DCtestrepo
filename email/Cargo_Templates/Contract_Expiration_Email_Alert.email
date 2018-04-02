@@ -1,0 +1,14 @@
+Hi,
+
+Following are the details of Opportunity for which Contract ends in 1 month: 
+
+Opportunity Name :{!Opportunity.Name}
+Account Name       : {!Opportunity.Account}
+Quantity(in Kg)       : {!Opportunity.Quantity_in_Kg__c}
+Stage                       : {!Opportunity.StageName}
+Contract End Date: {!Opportunity.Contract_End_Date__c}
+
+For more details refer following link:{!Opportunity.Link}
+
+Best Regards
+SFDC Admin

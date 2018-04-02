@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Non acceptance of non-Indian details (zip code, contact no. )</name>
+    <style>none</style>
+    <subject>Non acceptance of non-Indian details (zip code, contact no. )</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

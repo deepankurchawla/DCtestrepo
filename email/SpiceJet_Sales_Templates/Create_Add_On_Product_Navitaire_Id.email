@@ -1,0 +1,44 @@
+<messaging:emailTemplate subject="Create Navitaire Id for {!relatedTo.Product_Role__c} Product" recipientType="User" relatedToType="Product__c">
+    <messaging:htmlEmailBody >
+    Hi, 
+    <br/>
+    <br/>
+    Please create the Navitarie Id for {!relatedTo.Product_Role__c} product of Agency/Corporate - {!relatedTo.Account__r.Name}.
+    <br/>
+    <br/>
+    Details are as follows -
+    <br/>
+    <br/>
+        <table border="1" style="border-collapse: collapse;">
+            <apex:repeat value="{!$ObjectType.Product__c.FieldSets.Product_Fields}" var="f"> 
+                <tr>
+                    <td style="padding: 4px;"><b>{!f.Label}</b></td>
+                    <td style="padding: 4px;">{!relatedTo[f]}</td>
+                </tr>
+            </apex:repeat> 
+            <tr>
+                <td style="padding: 4px;"><b>Navitaire Id</b></td>
+                <td style="padding: 4px;">{!relatedTo.Navitaire_ID__c}</td>
+            </tr>
+        </table>
+    <br/>
+    <br/>
+
+    Follow this link for additional details - <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">Product Detail</apex:outputlink>
+    
+    <br/>
+    <br/>
+
+    Follow this to find all the Products of Agencies/Corporates pending for creation in Navitaire - <apex:outputlink value="https://spicejet.my.salesforce.com/00On0000000WnCN">Pending Products</apex:outputLink>
+
+    <br/>
+    <b>Note: </b> This is system generated email.
+    <br/>
+    <br/>
+    
+    Thanks,
+    <br/>
+    {!relatedTo.Owner.Name}
+
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

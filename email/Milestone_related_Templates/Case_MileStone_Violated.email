@@ -1,0 +1,17 @@
+Dear {!Case.OwnerFullName},
+
+A Case Milestone violation has occurred related to case with following details:
+ 
+Case Number:{!Case.CaseNumber}
+Case Owner   : {!Case.Origin}
+Passenger      : {!Case.Account}
+Department    : {!Case.Department__c}
+Category         : {!Case.Category__c}
+Type                 : {!Case.Type}
+Origin               : {!Case.Origin}
+
+Case has been escalated further.Please refer following link for more details:
+ {!Case.Link}
+
+Best Regards,
+SFDC Admin

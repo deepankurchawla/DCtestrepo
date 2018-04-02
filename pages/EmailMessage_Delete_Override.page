@@ -1,0 +1,14 @@
+<apex:page standardController="EmailMessage" action="{!if($Profile.Name!='Customer Experience - Team Leads',
+                                                       null,urlFor($Action.EmailMessage.Delete,$CurrentPage.Parameters.id,[retURL='/'+EmailMessage.ParentId],true))}">
+
+    <apex:pageBlock >
+       <apex:pageMessage summary="You are not allowed to delete the email message." severity="Warning" strength="3"/>
+       <apex:pageMessages />
+       <a onClick="window.history.go(-1); return false;"><B>Back</B></a> 
+    </apex:pageBlock>
+    
+    <apex:outputPanel rendered="false">
+        {!EmailMessage.ParentId}
+    </apex:outputPanel>
+    
+</apex:page>

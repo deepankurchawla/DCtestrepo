@@ -1,0 +1,43 @@
+<messaging:emailTemplate subject="Create Navitaire Id for {!relatedTo.Company}" recipientType="User" relatedToType="Lead">
+    <messaging:htmlEmailBody >
+    Hi, 
+    <br/>
+    <br/>
+    Please create the Navitarie Id for Agency/Corporate - {!relatedTo.Company}.
+    <br/>
+    <br/>
+    Details are as follows -
+    <br/>
+    <br/>
+        <table border="1" style="border-collapse: collapse;">
+            <apex:repeat value="{!$ObjectType.Lead.FieldSets.Travel_Agency_Fields}" var="f"> 
+                <tr>
+                    <td style="padding: 4px;"><b>{!f.Label}</b></td>
+                    <td style="padding: 4px;">{!relatedTo[f]}</td>
+                </tr>
+            </apex:repeat> 
+            <tr>
+                <td style="padding: 4px;"><b>Navitaire Id</b></td>
+                <td style="padding: 4px;">{!relatedTo.Navitaire_Id__c}</td>
+            </tr>
+        </table>
+    <br/>
+    <br/>
+
+    Follow this link for additional details - <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Company}</apex:outputlink>
+    
+    <br/>
+    <br/>
+
+    Follow this to find all Agencies/Corporates pending for creation in Navitaire - <apex:outputlink value="https://spicejet.my.salesforce.com/00On0000000WnAv">Pending Agencies/Corporates </apex:outputLink>
+
+    <br/>
+    <b>Note: </b> This is system generated email.
+    <br/>
+    <br/>
+    Thanks,
+    <br/>
+    {!relatedTo.Owner.Name}
+
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

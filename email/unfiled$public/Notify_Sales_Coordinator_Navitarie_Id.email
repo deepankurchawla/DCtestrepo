@@ -1,0 +1,6 @@
+Hi All,
+
+The Travel Agency/ Corporate - {!Account.Name} is approved. Please update the Navitarie Id.
+
+Thanks,
+{!Account.OwnerFullName}

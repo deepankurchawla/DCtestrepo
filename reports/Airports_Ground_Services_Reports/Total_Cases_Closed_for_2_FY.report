@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CREATED_DATEONLY</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Huge</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <filter>
+        <booleanFilter>((1 AND 2 AND 3 AND (4 OR 5)) AND 6) AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Case.Department__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Airport Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Complaint</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Departure_Station__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Adampur(VIAX),Agartala (IXA),Ahmedabad (AMD),Aizawl (AJL),Aizwal (AJL),Amritsar (ATQ),Bagdogra (IXB),Bangkok (BKK),Belagavi (IXG),Bengaluru (BLR),Chandigarh (IXC),Chennai (MAA),Coimbatore (CJB),Colombo (CMB),Dehradun (DED),Delhi (DEL),Dhaka(DAC),Dharamshala (DHM),Dibrugrah(DIB),Dubai (DXB),Goa (GOI),Gorakhpur (GOP),Guwahati (GAU),Hyderabad (HYD),Jabalpur (JLR),Jaipur (JAI),Jaisalmer(JSA),Jammu (IXJ),Jodhpur (JDH),Kabul (KBL),Kandla(IXY),Kanpur(KNU),Kochi (COK),Kolkata (CCU),Kozhikode (CCJ),Madurai (IXM),Male (MLE),Mangalore (IXE),Mumbai (BOM),Muscat (MCT),Patna(PAT),Pondicherry (PNY),Porbandar(PBD),Port Blair (IXZ),Pune (PNQ),Rajahmundry (RJA),Silchar (IXS),Srinagar (SXR),Surat (STV),Tirupati (TIR),Trivandrum (TRV),Tuticorin (TCR),Udaipur (UDR),Varanasi (VNS),Vijayawada (VGA),Vishkhapatnam (VTZ)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Departure_Station__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Adampur(VIAX),Agartala (IXA),Ahmedabad (AMD),Aizawl (AJL),Aizwal (AJL),Amritsar (ATQ),Bagdogra (IXB),Bangkok (BKK),Belagavi (IXG),Bengaluru (BLR),Chandigarh (IXC),Chennai (MAA),Coimbatore (CJB),Colombo (CMB),Dehradun (DED),Delhi (DEL),Dhaka(DAC),Dharamshala (DHM),Dibrugrah(DIB),Dubai (DXB),Goa (GOI),Gorakhpur (GOP),Guwahati (GAU),Hyderabad (HYD),Jabalpur (JLR),Jaipur (JAI),Jaisalmer(JSA),Jammu (IXJ),Jodhpur (JDH),Kabul (KBL),Kandla(IXY),Kanpur(KNU),Kochi (COK),Kolkata (CCU),Kozhikode (CCJ),Madurai (IXM),Male (MLE),Mangalore (IXE),Mumbai (BOM),Muscat (MCT),Patna(PAT),Pondicherry (PNY),Porbandar(PBD),Port Blair (IXZ),Pune (PNQ),Rajahmundry (RJA),Silchar (IXS),Srinagar (SXR),Surat (STV),Tirupati (TIR),Trivandrum (TRV),Tuticorin (TCR),Udaipur (UDR),Varanasi (VNS),Vijayawada (VGA),Vishkhapatnam (VTZ)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Sub_Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Baggage Open Condition,Bottle Broken,Conveyor Belt Issue,EBC Issue,Guest Error,Late Baggage Delivery,Left Behind,LRT Issues,LRT Signed,MAAS Issue,Minor Damage,Misinformation,Mis-Information,Pre Booked Seat Changed,Priority Baggage Delivery,Rude Behaviour,Safety Compliance,Service Complaint,SMAX Forced Sell,SMAX Service Issue,Staff Error,Wet Condition,Wheel Chair Assistance,Wrong Tagging,Major Damage</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Baggage Exchange,Baggage Interchange,Contents Damaged-Domestic,Contents Damaged-International,Damage,Error,Lost,Lost &amp; Found,Lost &amp; Found-Domestic,Lost &amp; Found-International,Lost-Domestic,Lost-International,Mishandled,Misinformation,Pilferage,Pilfered,Rude Behavior,Rude Behaviour,Security Regulations,Service Complaint,Short-Landing,SMAX,Spice Club issues,Staff Error.,Torn / Damaged,Wrong Tagging</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Cases Closed for 2 FY</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_PREVCURY</interval>
+    </timeFrameFilter>
+</Report>

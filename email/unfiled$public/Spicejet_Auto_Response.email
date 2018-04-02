@@ -1,0 +1,22 @@
+Dear SpiceJet Customer, 
+<br></br>  
+<br></br>
+Thank you for writing to SpiceJet. We value your feedback and suggestions. Our Customer Experience Team will get back to you at the earliest. 
+<br></br>
+<br></br>
+This is an automated response vide reference no. - {!Case.CaseNumber}
+<br></br>
+<br></br>
+Thanks & Regards,<br></br> 
+<strong>Customer Experience,</strong> 
+<br></br> 
+<strong>SpiceJet Limited. </strong>
+<br></br>
+Email     : custrelations@spicejet.com 
+<br></br>
+Website : http://www.spicejet.com 
+<br></br>
+<img src = "https://c.na30.content.force.com/servlet/servlet.ImageServer?id=01536000001Smz0&oid=00D36000000s6DE"/>
+<br></br>
+<br></br> 
+{!Case.Thread_Id}

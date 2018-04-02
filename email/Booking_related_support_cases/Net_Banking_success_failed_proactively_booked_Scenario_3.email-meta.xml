@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>-In case the transaction was successful and we are processing the refund (either because we could not contact them or they have rebooked)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Net Banking (success failed-proactively booked) Scenario 3</name>
+    <style>none</style>
+    <subject>Net Banking (success failed-proactively booked)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

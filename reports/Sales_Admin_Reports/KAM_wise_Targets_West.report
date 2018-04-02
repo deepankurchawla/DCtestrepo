@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(Targets__c.Actual__c:SUM - Targets__c.Base_Target__c:SUM) / Targets__c.Base_Target__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Difference (Base)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Targets__c.Actual__c:SUM - Targets__c.Stretch_Target__c:SUM) / Targets__c.Stretch_Target__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Difference (Stretch)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account.Products__r.Targets__r$Date__c</acrossGroupingContext>
+        <calculatedFormula>Targets__c.Base_Target__c:SUM/Targets__c.Days_in_Month__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>Account$Owner</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Required Rate (per day)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account.Products__r.Targets__r$Date__c</acrossGroupingContext>
+        <calculatedFormula>Targets__c.Actual__c:SUM/Targets__c.Current_Day__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <downGroupingContext>Account$Owner</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Current Rate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>Account.Products__r.Targets__r$Date__c</acrossGroupingContext>
+        <calculatedFormula>(Targets__c.Actual__c:SUM/Targets__c.Current_Day__c:AVG)*Targets__c.Days_in_Month__c:AVG</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA5</developerName>
+        <downGroupingContext>Account$Owner</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Prorated Actual</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Products__r.Targets__r$Base_Target__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Products__r.Targets__r$Stretch_Target__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Products__r.Targets__r$Actual__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Products__r$Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>West</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account.Products__r.Targets__r$Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>KAM wise Targets (West)</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Targets_and_Actuals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Products__r.Targets__r$Date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

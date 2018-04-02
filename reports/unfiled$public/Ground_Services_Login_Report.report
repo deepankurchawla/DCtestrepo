@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>COMPANY_NAME</field>
+    </columns>
+    <columns>
+        <field>DIVISION</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <description>Ground Services Login Report</description>
+    <filter>
+        <criteriaItems>
+            <column>DEPARTMENT</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Ground Services</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DEPARTMENT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LAST_LOGIN</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Ground Services Login Report</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <endDate>2016-09-26</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-09-19</startDate>
+    </timeFrameFilter>
+</Report>

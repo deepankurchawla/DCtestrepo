@@ -1,0 +1,4934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Convert</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FindDup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Cargo Door to Door</fullName>
+        <description>Cargo Door to Door Business process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Corporate</fullName>
+        <description>Lead Process for Corporate Leads</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Travel Agency</fullName>
+        <description>Lead Process for Travel Agency Leads</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fieldSets>
+        <fullName>Travel_Agency_Fields</fullName>
+        <description>For use in the Lead Approval Request VF Template</description>
+        <displayedFields>
+            <field>Company</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Channel__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Product_Role__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Business_Registration_No__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Legal_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Station_Nearest_Airport__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Lead_Owner_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Travel Agency Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>Address</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Agreed_Annual_Target_PA__c</fullName>
+        <externalId>false</externalId>
+        <label>Agreed Annual Target PA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved by Central Coordinator</fullName>
+                    <default>false</default>
+                    <label>Approved by Central Coordinator</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approx_Annual_Travel_Spend_Last_Year__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Per Annunn</inlineHelpText>
+        <label>Approx Annual Travel Spend Last Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Business_Registration_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Registration No.</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CITY__c</fullName>
+        <externalId>false</externalId>
+        <label>CITY</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>INTL</fullName>
+                    <default>false</default>
+                    <label>INTL</label>
+                </value>
+                <value>
+                    <fullName>OTA B2B</fullName>
+                    <default>false</default>
+                    <label>OTA B2B</label>
+                </value>
+                <value>
+                    <fullName>OTA B2C</fullName>
+                    <default>false</default>
+                    <label>OTA B2C</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>TMC</fullName>
+                    <default>false</default>
+                    <label>TMC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commissionable__c</fullName>
+        <externalId>false</externalId>
+        <label>Commissionable</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Corporate_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Corporate Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Corporate Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Created_in_Navitaire__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created in Navitaire</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Email_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>First_Name_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>IATA_TAAI_TAFI_IATO_No__c</fullName>
+        <externalId>false</externalId>
+        <label>IATA/TAAI/TAFI/IATO No</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>LastTransferDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Last_Name_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp; &quot; &quot; &amp; Owner:User.LastName</formula>
+        <label>Lead Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Limited Co.</fullName>
+                    <default>false</default>
+                    <label>Limited Co.</label>
+                </value>
+                <value>
+                    <fullName>Partnership Firm</fullName>
+                    <default>false</default>
+                    <label>Partnership Firm</label>
+                </value>
+                <value>
+                    <fullName>Sole Proprietorship</fullName>
+                    <default>false</default>
+                    <label>Sole Proprietorship</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>INT</fullName>
+                    <default>false</default>
+                    <label>INT</label>
+                </value>
+                <value>
+                    <fullName>DOM</fullName>
+                    <default>false</default>
+                    <label>DOM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Log__c</fullName>
+        <externalId>false</externalId>
+        <label>Login ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lost_Reason__c</fullName>
+        <description>For Cargo</description>
+        <externalId>false</externalId>
+        <label>Lost Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competition</fullName>
+                    <default>false</default>
+                    <label>Competition</label>
+                </value>
+                <value>
+                    <fullName>Lack of Interest</fullName>
+                    <default>false</default>
+                    <label>Lack of Interest</label>
+                </value>
+                <value>
+                    <fullName>Pricing</fullName>
+                    <default>false</default>
+                    <label>Pricing</label>
+                </value>
+                <value>
+                    <fullName>Product not Available</fullName>
+                    <default>false</default>
+                    <label>Product not Available</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Middle_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Middle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Mobile_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mode_of_Payment__c</fullName>
+        <externalId>false</externalId>
+        <label>Mode of Payment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Demand Draft</fullName>
+                    <default>false</default>
+                    <label>Demand Draft</label>
+                </value>
+                <value>
+                    <fullName>Electronic Fund Transfer</fullName>
+                    <default>false</default>
+                    <label>Electronic Fund Transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Movement_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Movement Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incentive Movement</fullName>
+                    <default>false</default>
+                    <label>Incentive Movement</label>
+                </value>
+                <value>
+                    <fullName>Regular Group</fullName>
+                    <default>false</default>
+                    <label>Regular Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Navitaire_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Navitaire Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Months_Deal_Valid__c</fullName>
+        <externalId>false</externalId>
+        <label>No of Months Deal Valid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Origin</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Okhla (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Okhla (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Mahipalpur (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Mahipalpur (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Noida</fullName>
+                    <default>false</default>
+                    <label>Noida</label>
+                </value>
+                <value>
+                    <fullName>Gurgaon</fullName>
+                    <default>false</default>
+                    <label>Gurgaon</label>
+                </value>
+                <value>
+                    <fullName>Lucknow</fullName>
+                    <default>false</default>
+                    <label>Lucknow</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh</fullName>
+                    <default>false</default>
+                    <label>Chandigarh</label>
+                </value>
+                <value>
+                    <fullName>Kolkata</fullName>
+                    <default>false</default>
+                    <label>Kolkata</label>
+                </value>
+                <value>
+                    <fullName>Indore</fullName>
+                    <default>false</default>
+                    <label>Indore</label>
+                </value>
+                <value>
+                    <fullName>Mumbai</fullName>
+                    <default>false</default>
+                    <label>Mumbai</label>
+                </value>
+                <value>
+                    <fullName>Goa</fullName>
+                    <default>false</default>
+                    <label>Goa</label>
+                </value>
+                <value>
+                    <fullName>Nagpur</fullName>
+                    <default>false</default>
+                    <label>Nagpur</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad</label>
+                </value>
+                <value>
+                    <fullName>Chennai</fullName>
+                    <default>false</default>
+                    <label>Chennai</label>
+                </value>
+                <value>
+                    <fullName>Bangalore</fullName>
+                    <default>false</default>
+                    <label>Bangalore</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad</fullName>
+                    <default>false</default>
+                    <label>Hyderabad</label>
+                </value>
+                <value>
+                    <fullName>Pune</fullName>
+                    <default>false</default>
+                    <label>Pune</label>
+                </value>
+                <value>
+                    <fullName>Ludhiana</fullName>
+                    <default>false</default>
+                    <label>Ludhiana</label>
+                </value>
+                <value>
+                    <fullName>Baddi</fullName>
+                    <default>false</default>
+                    <label>Baddi</label>
+                </value>
+                <value>
+                    <fullName>Parwanoo</fullName>
+                    <default>false</default>
+                    <label>Parwanoo</label>
+                </value>
+                <value>
+                    <fullName>Jalandhar</fullName>
+                    <default>false</default>
+                    <label>Jalandhar</label>
+                </value>
+                <value>
+                    <fullName>Varanasi</fullName>
+                    <default>false</default>
+                    <label>Varanasi</label>
+                </value>
+                <value>
+                    <fullName>Dehradun</fullName>
+                    <default>false</default>
+                    <label>Dehradun</label>
+                </value>
+                <value>
+                    <fullName>Patna</fullName>
+                    <default>false</default>
+                    <label>Patna</label>
+                </value>
+                <value>
+                    <fullName>Ranchi</fullName>
+                    <default>false</default>
+                    <label>Ranchi</label>
+                </value>
+                <value>
+                    <fullName>Vijaywada</fullName>
+                    <default>false</default>
+                    <label>Vijaywada</label>
+                </value>
+                <value>
+                    <fullName>Jaipur</fullName>
+                    <default>false</default>
+                    <label>Jaipur</label>
+                </value>
+                <value>
+                    <fullName>Cochin</fullName>
+                    <default>false</default>
+                    <label>Cochin</label>
+                </value>
+                <value>
+                    <fullName>Haridwar</fullName>
+                    <default>false</default>
+                    <label>Haridwar</label>
+                </value>
+                <value>
+                    <fullName>Aurangabad</fullName>
+                    <default>false</default>
+                    <label>Aurangabad</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore</fullName>
+                    <default>false</default>
+                    <label>Coimbatore</label>
+                </value>
+                <value>
+                    <fullName>Kirti Nagar (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Kirti Nagar (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Bhubaneswar</fullName>
+                    <default>false</default>
+                    <label>Bhubaneswar</label>
+                </value>
+                <value>
+                    <fullName>Siliguri</fullName>
+                    <default>false</default>
+                    <label>Siliguri</label>
+                </value>
+                <value>
+                    <fullName>Bhiwandi</fullName>
+                    <default>false</default>
+                    <label>Bhiwandi</label>
+                </value>
+                <value>
+                    <fullName>Navi Mumbai</fullName>
+                    <default>false</default>
+                    <label>Navi Mumbai</label>
+                </value>
+                <value>
+                    <fullName>Guwahati</fullName>
+                    <default>false</default>
+                    <label>Guwahati</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Office_Locations__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Office locations</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAN_No__c</fullName>
+        <externalId>false</externalId>
+        <label>PAN No.</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Remarks</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Phone_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Product_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Product/Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>API</fullName>
+                    <default>false</default>
+                    <label>API</label>
+                </value>
+                <value>
+                    <fullName>API Corporate</fullName>
+                    <default>false</default>
+                    <label>API Corporate</label>
+                </value>
+                <value>
+                    <fullName>CORT</fullName>
+                    <default>false</default>
+                    <label>CORT</label>
+                </value>
+                <value>
+                    <fullName>HOL</fullName>
+                    <default>false</default>
+                    <label>HOL</label>
+                </value>
+                <value>
+                    <fullName>IBM</fullName>
+                    <default>false</default>
+                    <label>IBM</label>
+                </value>
+                <value>
+                    <fullName>LTC</fullName>
+                    <default>false</default>
+                    <label>LTC</label>
+                </value>
+                <value>
+                    <fullName>STBF</fullName>
+                    <default>false</default>
+                    <label>STBF</label>
+                </value>
+                <value>
+                    <fullName>TATA</fullName>
+                    <default>false</default>
+                    <label>TATA</label>
+                </value>
+                <value>
+                    <fullName>TCPN</fullName>
+                    <default>false</default>
+                    <label>TCPN</label>
+                </value>
+                <value>
+                    <fullName>Web Travel Agent</fullName>
+                    <default>false</default>
+                    <label>Web Travel Agent</label>
+                </value>
+                <value>
+                    <fullName>APIC</fullName>
+                    <default>false</default>
+                    <label>APIC</label>
+                </value>
+                <value>
+                    <fullName>GRP</fullName>
+                    <default>false</default>
+                    <label>GRP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Disqualification__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Disqualification</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TBA</fullName>
+                    <default>false</default>
+                    <label>TBA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Record_Type_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Type Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>East</fullName>
+                    <default>false</default>
+                    <label>East</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sectors_Frequently_Travelled__c</fullName>
+        <externalId>false</externalId>
+        <label>Sectors Frequently Travelled</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agartala (IXA)</fullName>
+                    <default>false</default>
+                    <label>Agartala (IXA)</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad (AMD)</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad (AMD)</label>
+                </value>
+                <value>
+                    <fullName>Amritsar (ATQ)</fullName>
+                    <default>false</default>
+                    <label>Amritsar (ATQ)</label>
+                </value>
+                <value>
+                    <fullName>Bagdogra (IXB)</fullName>
+                    <default>false</default>
+                    <label>Bagdogra (IXB)</label>
+                </value>
+                <value>
+                    <fullName>Bangkok (BKK)</fullName>
+                    <default>false</default>
+                    <label>Bangkok (BKK)</label>
+                </value>
+                <value>
+                    <fullName>Belagavi (IXG)</fullName>
+                    <default>false</default>
+                    <label>Belagavi (IXG)</label>
+                </value>
+                <value>
+                    <fullName>Bengaluru (BLR)</fullName>
+                    <default>false</default>
+                    <label>Bengaluru (BLR)</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh (IXC)</fullName>
+                    <default>false</default>
+                    <label>Chandigarh (IXC)</label>
+                </value>
+                <value>
+                    <fullName>Chennai (MAA)</fullName>
+                    <default>false</default>
+                    <label>Chennai (MAA)</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore (CJB)</fullName>
+                    <default>false</default>
+                    <label>Coimbatore (CJB)</label>
+                </value>
+                <value>
+                    <fullName>Colombo (CMB)</fullName>
+                    <default>false</default>
+                    <label>Colombo (CMB)</label>
+                </value>
+                <value>
+                    <fullName>Dehradun (DED)</fullName>
+                    <default>false</default>
+                    <label>Dehradun (DED)</label>
+                </value>
+                <value>
+                    <fullName>Delhi (DEL)</fullName>
+                    <default>false</default>
+                    <label>Delhi (DEL)</label>
+                </value>
+                <value>
+                    <fullName>Dharamshala (DHM)</fullName>
+                    <default>false</default>
+                    <label>Dharamshala (DHM)</label>
+                </value>
+                <value>
+                    <fullName>Dubai (DXB)</fullName>
+                    <default>false</default>
+                    <label>Dubai (DXB)</label>
+                </value>
+                <value>
+                    <fullName>Goa (GOI)</fullName>
+                    <default>false</default>
+                    <label>Goa (GOI)</label>
+                </value>
+                <value>
+                    <fullName>Guwahati (GAU)</fullName>
+                    <default>false</default>
+                    <label>Guwahati (GAU)</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad (HYD)</fullName>
+                    <default>false</default>
+                    <label>Hyderabad (HYD)</label>
+                </value>
+                <value>
+                    <fullName>Jabalpur (JLR)</fullName>
+                    <default>false</default>
+                    <label>Jabalpur (JLR)</label>
+                </value>
+                <value>
+                    <fullName>Jaipur (JAI)</fullName>
+                    <default>false</default>
+                    <label>Jaipur (JAI)</label>
+                </value>
+                <value>
+                    <fullName>Jammu (IXJ)</fullName>
+                    <default>false</default>
+                    <label>Jammu (IXJ)</label>
+                </value>
+                <value>
+                    <fullName>Jodhpur (JDH)</fullName>
+                    <default>false</default>
+                    <label>Jodhpur (JDH)</label>
+                </value>
+                <value>
+                    <fullName>Kabul (KBL)</fullName>
+                    <default>false</default>
+                    <label>Kabul (KBL)</label>
+                </value>
+                <value>
+                    <fullName>Kochi (COK)</fullName>
+                    <default>false</default>
+                    <label>Kochi (COK)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata (CCU)</fullName>
+                    <default>false</default>
+                    <label>Kolkata (CCU)</label>
+                </value>
+                <value>
+                    <fullName>Kozhikode (CCJ)</fullName>
+                    <default>false</default>
+                    <label>Kozhikode (CCJ)</label>
+                </value>
+                <value>
+                    <fullName>Madurai (IXM)</fullName>
+                    <default>false</default>
+                    <label>Madurai (IXM)</label>
+                </value>
+                <value>
+                    <fullName>Male (MLE)</fullName>
+                    <default>false</default>
+                    <label>Male (MLE)</label>
+                </value>
+                <value>
+                    <fullName>Mangalore (IXE)</fullName>
+                    <default>false</default>
+                    <label>Mangalore (IXE)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai (BOM)</fullName>
+                    <default>false</default>
+                    <label>Mumbai (BOM)</label>
+                </value>
+                <value>
+                    <fullName>Muscat (MCT)</fullName>
+                    <default>false</default>
+                    <label>Muscat (MCT)</label>
+                </value>
+                <value>
+                    <fullName>Port Blair (IXZ)</fullName>
+                    <default>false</default>
+                    <label>Port Blair (IXZ)</label>
+                </value>
+                <value>
+                    <fullName>Pune (PNQ)</fullName>
+                    <default>false</default>
+                    <label>Pune (PNQ)</label>
+                </value>
+                <value>
+                    <fullName>Rajahmundry (RJA)</fullName>
+                    <default>false</default>
+                    <label>Rajahmundry (RJA)</label>
+                </value>
+                <value>
+                    <fullName>Srinagar (SXR)</fullName>
+                    <default>false</default>
+                    <label>Srinagar (SXR)</label>
+                </value>
+                <value>
+                    <fullName>Tirupati (TIR)</fullName>
+                    <default>false</default>
+                    <label>Tirupati (TIR)</label>
+                </value>
+                <value>
+                    <fullName>Trivandrum (TRV)</fullName>
+                    <default>false</default>
+                    <label>Trivandrum (TRV)</label>
+                </value>
+                <value>
+                    <fullName>Tuticorin (TCR)</fullName>
+                    <default>false</default>
+                    <label>Tuticorin (TCR)</label>
+                </value>
+                <value>
+                    <fullName>Udaipur (UDR)</fullName>
+                    <default>false</default>
+                    <label>Udaipur (UDR)</label>
+                </value>
+                <value>
+                    <fullName>Varanasi (VNS)</fullName>
+                    <default>false</default>
+                    <label>Varanasi (VNS)</label>
+                </value>
+                <value>
+                    <fullName>Vijayawada (VGA)</fullName>
+                    <default>false</default>
+                    <label>Vijayawada (VGA)</label>
+                </value>
+                <value>
+                    <fullName>Vishkhapatnam (VTZ)</fullName>
+                    <default>false</default>
+                    <label>Vishkhapatnam (VTZ)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AN</fullName>
+                    <default>false</default>
+                    <label>AN</label>
+                </value>
+                <value>
+                    <fullName>ANI</fullName>
+                    <default>false</default>
+                    <label>ANI</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>AP</label>
+                </value>
+                <value>
+                    <fullName>ASM</fullName>
+                    <default>false</default>
+                    <label>ASM</label>
+                </value>
+                <value>
+                    <fullName>BHR</fullName>
+                    <default>false</default>
+                    <label>BHR</label>
+                </value>
+                <value>
+                    <fullName>CHT</fullName>
+                    <default>false</default>
+                    <label>CHT</label>
+                </value>
+                <value>
+                    <fullName>DEL</fullName>
+                    <default>false</default>
+                    <label>DEL</label>
+                </value>
+                <value>
+                    <fullName>GA</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>GJ</fullName>
+                    <default>false</default>
+                    <label>GJ</label>
+                </value>
+                <value>
+                    <fullName>GOA</fullName>
+                    <default>false</default>
+                    <label>GOA</label>
+                </value>
+                <value>
+                    <fullName>GUJ</fullName>
+                    <default>false</default>
+                    <label>GUJ</label>
+                </value>
+                <value>
+                    <fullName>HAR</fullName>
+                    <default>false</default>
+                    <label>HAR</label>
+                </value>
+                <value>
+                    <fullName>HP</fullName>
+                    <default>false</default>
+                    <label>HP</label>
+                </value>
+                <value>
+                    <fullName>HYD</fullName>
+                    <default>false</default>
+                    <label>HYD</label>
+                </value>
+                <value>
+                    <fullName>J&amp;K</fullName>
+                    <default>false</default>
+                    <label>J&amp;K</label>
+                </value>
+                <value>
+                    <fullName>JH</fullName>
+                    <default>false</default>
+                    <label>JH</label>
+                </value>
+                <value>
+                    <fullName>JHR</fullName>
+                    <default>false</default>
+                    <label>JHR</label>
+                </value>
+                <value>
+                    <fullName>KAR</fullName>
+                    <default>false</default>
+                    <label>KAR</label>
+                </value>
+                <value>
+                    <fullName>KER</fullName>
+                    <default>false</default>
+                    <label>KER</label>
+                </value>
+                <value>
+                    <fullName>MAH</fullName>
+                    <default>false</default>
+                    <label>MAH</label>
+                </value>
+                <value>
+                    <fullName>MEG</fullName>
+                    <default>false</default>
+                    <label>MEG</label>
+                </value>
+                <value>
+                    <fullName>MH</fullName>
+                    <default>false</default>
+                    <label>MH</label>
+                </value>
+                <value>
+                    <fullName>MP</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>ORI</fullName>
+                    <default>false</default>
+                    <label>ORI</label>
+                </value>
+                <value>
+                    <fullName>PUB</fullName>
+                    <default>false</default>
+                    <label>PUB</label>
+                </value>
+                <value>
+                    <fullName>RAJ</fullName>
+                    <default>false</default>
+                    <label>RAJ</label>
+                </value>
+                <value>
+                    <fullName>TN</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>TRP</fullName>
+                    <default>false</default>
+                    <label>TRP</label>
+                </value>
+                <value>
+                    <fullName>UP</fullName>
+                    <default>false</default>
+                    <label>UP</label>
+                </value>
+                <value>
+                    <fullName>UTRL</fullName>
+                    <default>false</default>
+                    <label>UTRL</label>
+                </value>
+                <value>
+                    <fullName>WB</fullName>
+                    <default>false</default>
+                    <label>WB</label>
+                </value>
+                <value>
+                    <fullName>WBL</fullName>
+                    <default>false</default>
+                    <label>WBL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Station_Nearest_Airport__c</fullName>
+        <externalId>false</externalId>
+        <label>Station (Nearest Airport)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agartala (IXA)</fullName>
+                    <default>false</default>
+                    <label>Agartala (IXA)</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad (AMD)</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad (AMD)</label>
+                </value>
+                <value>
+                    <fullName>Aizawl (AJL)</fullName>
+                    <default>false</default>
+                    <label>Aizawl (AJL)</label>
+                </value>
+                <value>
+                    <fullName>Amritsar (ATQ)</fullName>
+                    <default>false</default>
+                    <label>Amritsar (ATQ)</label>
+                </value>
+                <value>
+                    <fullName>Bagdogra (IXB)</fullName>
+                    <default>false</default>
+                    <label>Bagdogra (IXB)</label>
+                </value>
+                <value>
+                    <fullName>Bangkok (BKK)</fullName>
+                    <default>false</default>
+                    <label>Bangkok (BKK)</label>
+                </value>
+                <value>
+                    <fullName>Belagavi (IXG)</fullName>
+                    <default>false</default>
+                    <label>Belagavi (IXG)</label>
+                </value>
+                <value>
+                    <fullName>Bengaluru (BLR)</fullName>
+                    <default>false</default>
+                    <label>Bengaluru (BLR)</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh (IXC)</fullName>
+                    <default>false</default>
+                    <label>Chandigarh (IXC)</label>
+                </value>
+                <value>
+                    <fullName>Chennai (MAA)</fullName>
+                    <default>false</default>
+                    <label>Chennai (MAA)</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore (CJB)</fullName>
+                    <default>false</default>
+                    <label>Coimbatore (CJB)</label>
+                </value>
+                <value>
+                    <fullName>Colombo (CMB)</fullName>
+                    <default>false</default>
+                    <label>Colombo (CMB)</label>
+                </value>
+                <value>
+                    <fullName>Dehradun (DED)</fullName>
+                    <default>false</default>
+                    <label>Dehradun (DED)</label>
+                </value>
+                <value>
+                    <fullName>Delhi (DEL)</fullName>
+                    <default>false</default>
+                    <label>Delhi (DEL)</label>
+                </value>
+                <value>
+                    <fullName>Dharamshala (DHM)</fullName>
+                    <default>false</default>
+                    <label>Dharamshala (DHM)</label>
+                </value>
+                <value>
+                    <fullName>Dubai (DXB)</fullName>
+                    <default>false</default>
+                    <label>Dubai (DXB)</label>
+                </value>
+                <value>
+                    <fullName>Goa (GOI)</fullName>
+                    <default>false</default>
+                    <label>Goa (GOI)</label>
+                </value>
+                <value>
+                    <fullName>Gorakhpur (GOP)</fullName>
+                    <default>false</default>
+                    <label>Gorakhpur (GOP)</label>
+                </value>
+                <value>
+                    <fullName>Guwahati (GAU)</fullName>
+                    <default>false</default>
+                    <label>Guwahati (GAU)</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad (HYD)</fullName>
+                    <default>false</default>
+                    <label>Hyderabad (HYD)</label>
+                </value>
+                <value>
+                    <fullName>Jabalpur (JLR)</fullName>
+                    <default>false</default>
+                    <label>Jabalpur (JLR)</label>
+                </value>
+                <value>
+                    <fullName>Jaipur (JAI)</fullName>
+                    <default>false</default>
+                    <label>Jaipur (JAI)</label>
+                </value>
+                <value>
+                    <fullName>Jammu (IXJ)</fullName>
+                    <default>false</default>
+                    <label>Jammu (IXJ)</label>
+                </value>
+                <value>
+                    <fullName>Jodhpur (JDH)</fullName>
+                    <default>false</default>
+                    <label>Jodhpur (JDH)</label>
+                </value>
+                <value>
+                    <fullName>Kabul (KBL)</fullName>
+                    <default>false</default>
+                    <label>Kabul (KBL)</label>
+                </value>
+                <value>
+                    <fullName>Kochi (COK)</fullName>
+                    <default>false</default>
+                    <label>Kochi (COK)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata (CCU)</fullName>
+                    <default>false</default>
+                    <label>Kolkata (CCU)</label>
+                </value>
+                <value>
+                    <fullName>Kozhikode (CCJ)</fullName>
+                    <default>false</default>
+                    <label>Kozhikode (CCJ)</label>
+                </value>
+                <value>
+                    <fullName>Madurai (IXM)</fullName>
+                    <default>false</default>
+                    <label>Madurai (IXM)</label>
+                </value>
+                <value>
+                    <fullName>Male (MLE)</fullName>
+                    <default>false</default>
+                    <label>Male (MLE)</label>
+                </value>
+                <value>
+                    <fullName>Mangalore (IXE)</fullName>
+                    <default>false</default>
+                    <label>Mangalore (IXE)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai (BOM)</fullName>
+                    <default>false</default>
+                    <label>Mumbai (BOM)</label>
+                </value>
+                <value>
+                    <fullName>Muscat (MCT)</fullName>
+                    <default>false</default>
+                    <label>Muscat (MCT)</label>
+                </value>
+                <value>
+                    <fullName>Port Blair (IXZ)</fullName>
+                    <default>false</default>
+                    <label>Port Blair (IXZ)</label>
+                </value>
+                <value>
+                    <fullName>Pune (PNQ)</fullName>
+                    <default>false</default>
+                    <label>Pune (PNQ)</label>
+                </value>
+                <value>
+                    <fullName>Rajahmundry (RJA)</fullName>
+                    <default>false</default>
+                    <label>Rajahmundry (RJA)</label>
+                </value>
+                <value>
+                    <fullName>Silchar (IXS)</fullName>
+                    <default>false</default>
+                    <label>Silchar (IXS)</label>
+                </value>
+                <value>
+                    <fullName>Srinagar (SXR)</fullName>
+                    <default>false</default>
+                    <label>Srinagar (SXR)</label>
+                </value>
+                <value>
+                    <fullName>Tirupati (TIR)</fullName>
+                    <default>false</default>
+                    <label>Tirupati (TIR)</label>
+                </value>
+                <value>
+                    <fullName>Trivandrum (TRV)</fullName>
+                    <default>false</default>
+                    <label>Trivandrum (TRV)</label>
+                </value>
+                <value>
+                    <fullName>Tuticorin (TCR)</fullName>
+                    <default>false</default>
+                    <label>Tuticorin (TCR)</label>
+                </value>
+                <value>
+                    <fullName>Udaipur (UDR)</fullName>
+                    <default>false</default>
+                    <label>Udaipur (UDR)</label>
+                </value>
+                <value>
+                    <fullName>Varanasi (VNS)</fullName>
+                    <default>false</default>
+                    <label>Varanasi (VNS)</label>
+                </value>
+                <value>
+                    <fullName>Vijayawada (VGA)</fullName>
+                    <default>false</default>
+                    <label>Vijayawada (VGA)</label>
+                </value>
+                <value>
+                    <fullName>Vishkhapatnam (VTZ)</fullName>
+                    <default>false</default>
+                    <label>Vishkhapatnam (VTZ)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Station__c</fullName>
+        <externalId>false</externalId>
+        <label>Station</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subsidiaries_if_any__c</fullName>
+        <externalId>false</externalId>
+        <label>Subsidiaries (if any)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRAVEL_AGENCY__c</fullName>
+        <externalId>false</externalId>
+        <label>TRAVEL AGENCY</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Target_Per_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Title_AS__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WEB_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>WEB Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Web_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Web Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <listViews>
+        <fullName>AllOpenLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Qualified</value>
+        </filters>
+        <label>All Open Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>Cargo_Unassigned_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Cargo Unassigned</label>
+        <queue>Cargo_Unassigned</queue>
+        <sharedTo>
+            <role>DGM_Door_to_Door</role>
+            <role>GM_Door_to_Door</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Central_Sales_Coordinators_Lead</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Central Sales Coordinators</label>
+        <queue>Central_Sales_Coordinators</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyUnreadLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.RATING</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>LEAD.UNREAD</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Unread Leads</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Agency_creation_in_Navitaire</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>Navitaire_Id__c</columns>
+        <columns>Created_in_Navitaire__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>Created_in_Navitaire__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.Travel_Agency</value>
+        </filters>
+        <label>Pending Agency creation in Navitaire</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Corporate_creation_in_Navitaire</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>Navitaire_Id__c</columns>
+        <columns>Created_in_Navitaire__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>Created_in_Navitaire__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>LEAD.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Lead.Corporate</value>
+        </filters>
+        <label>Pending Corporate creation in Navitaire</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysLeads</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Leads</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Cargo_Door_to_Door</fullName>
+        <active>true</active>
+        <businessProcess>Cargo Door to Door</businessProcess>
+        <description>Record Type for Cargo Door to Door</description>
+        <label>Cargo Door to Door</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved by Central Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__c</picklist>
+            <values>
+                <fullName>INTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TMC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commissionable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency__c</picklist>
+            <values>
+                <fullName>INR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Status__c</picklist>
+            <values>
+                <fullName>Limited Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership Firm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>DOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product not Available</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mode_of_Payment__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demand Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic Fund Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Movement_Type__c</picklist>
+            <values>
+                <fullName>Incentive Movement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin__c</picklist>
+            <values>
+                <fullName>Ahmedabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aurangabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baddi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhiwandi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhubaneswar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cochin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gurgaon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haridwar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jalandhar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kirti Nagar %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lucknow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ludhiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mahipalpur %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Navi Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Noida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Okhla %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parwanoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ranchi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siliguri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijaywada</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Role__c</picklist>
+            <values>
+                <fullName>API</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>API Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>APIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GRP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IBM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STBF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TATA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCPN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Travel Agent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Green</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_Disqualification__c</picklist>
+            <values>
+                <fullName>TBA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sectors_Frequently_Travelled__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>AN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GUJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HYD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>J%26K</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UTRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBL</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Station_Nearest_Airport__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aizawl %28AJL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gorakhpur %28GOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silchar %28IXS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Corporate</fullName>
+        <active>true</active>
+        <businessProcess>Corporate</businessProcess>
+        <description>For Corporate leads</description>
+        <label>Corporate</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved by Central Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__c</picklist>
+            <values>
+                <fullName>INTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TMC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commissionable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency__c</picklist>
+            <values>
+                <fullName>INR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Status__c</picklist>
+            <values>
+                <fullName>Limited Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership Firm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>DOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mode_of_Payment__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demand Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic Fund Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Movement_Type__c</picklist>
+            <values>
+                <fullName>Incentive Movement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Role__c</picklist>
+            <values>
+                <fullName>API Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CORT</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>TATA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_Disqualification__c</picklist>
+            <values>
+                <fullName>TBA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sectors_Frequently_Travelled__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>AN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GUJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HYD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>J%26K</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UTRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBL</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Station_Nearest_Airport__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aizawl %28AJL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gorakhpur %28GOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silchar %28IXS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Travel_Agency</fullName>
+        <active>true</active>
+        <businessProcess>Travel Agency</businessProcess>
+        <description>For Travel Agencies</description>
+        <label>Travel Agency</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved by Central Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__c</picklist>
+            <values>
+                <fullName>INTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTA B2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TMC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Commissionable__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency__c</picklist>
+            <values>
+                <fullName>INR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Legal_Status__c</picklist>
+            <values>
+                <fullName>Limited Co%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership Firm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>DOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mode_of_Payment__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demand Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic Fund Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Movement_Type__c</picklist>
+            <values>
+                <fullName>Incentive Movement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Role__c</picklist>
+            <values>
+                <fullName>API</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>APIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GRP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IBM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LTC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STBF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCPN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Travel Agent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_for_Disqualification__c</picklist>
+            <values>
+                <fullName>TBA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sectors_Frequently_Travelled__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>AN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GUJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HYD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>J%26K</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JHR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PUB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UTRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WBL</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Station_Nearest_Airport__c</picklist>
+            <values>
+                <fullName>Agartala %28IXA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ahmedabad %28AMD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aizawl %28AJL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amritsar %28ATQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bagdogra %28IXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangkok %28BKK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belagavi %28IXG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengaluru %28BLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh %28IXC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai %28MAA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore %28CJB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colombo %28CMB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun %28DED%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delhi %28DEL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dharamshala %28DHM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubai %28DXB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa %28GOI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gorakhpur %28GOP%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati %28GAU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad %28HYD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jabalpur %28JLR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur %28JAI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jammu %28IXJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jodhpur %28JDH%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kabul %28KBL%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kochi %28COK%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata %28CCU%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kozhikode %28CCJ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madurai %28IXM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male %28MLE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mangalore %28IXE%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai %28BOM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Muscat %28MCT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port Blair %28IXZ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune %28PNQ%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rajahmundry %28RJA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silchar %28IXS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Srinagar %28SXR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tirupati %28TIR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trivandrum %28TRV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tuticorin %28TCR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Udaipur %28UDR%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi %28VNS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijayawada %28VGA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vishkhapatnam %28VTZ%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Mobile_AS__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Phone_AS__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.MOBILE_PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>PAN_is_mandatory_for_Domestic_Agencies</fullName>
+        <active>true</active>
+        <description>PAN No. is mandatory for Domestic Agencies</description>
+        <errorConditionFormula>AND(ISPICKVAL(Location__c, &apos;DOM&apos;),  ISBLANK(PAN_No__c), RecordType.DeveloperName == &apos;Travel_Agency&apos;)</errorConditionFormula>
+        <errorDisplayField>PAN_No__c</errorDisplayField>
+        <errorMessage>Please enter the PAN No.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Payment_Amount_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISBLANK(TEXT(Mode_of_Payment__c))), ISBLANK(Payment_Amount__c),  RecordType.DeveloperName == &apos;Travel_Agency&apos;)</errorConditionFormula>
+        <errorDisplayField>Payment_Amount__c</errorDisplayField>
+        <errorMessage>Please enter the Payment Amount.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Lead_Street}+{!Lead_City}+{!Lead_State}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Lead_Company}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Lead_Email}&lt;{!Lead_LastName}, {!Lead_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&amp;csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&amp;addr={!Lead_Address}</url>
+    </webLinks>
+</CustomObject>

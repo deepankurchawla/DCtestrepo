@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>User.Count__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># Users Logged In</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_6465718</developerName>
+        <masterLabel>User Profile</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User.Profile_Name__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Reservations - Agents</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reservations - Team Leads</sourceValue>
+            </sourceValues>
+            <value>Reservations</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer Experience</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Experience - Team Leads</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Experience-Supervisors</sourceValue>
+            </sourceValues>
+            <value>Customer Experience</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ground Services and Airports</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ground Services and Airports - Team Leads</sourceValue>
+            </sourceValues>
+            <value>Ground Staff</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Spicejet Management</sourceValue>
+            </sourceValues>
+            <value>HOD&apos;s</value>
+        </values>
+        <values>
+            <value>Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Spicejet Admin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>System Administrator</sourceValue>
+            </sourceValues>
+            <value>Administrators</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chatter Free User</sourceValue>
+            </sourceValues>
+            <value>Chatter Free Users</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>LOGIN_DATETIME</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <description>Today&apos;s Logged In Users-Reservations</description>
+    <filter>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>System Administrator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_6465718</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Reservations</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_6465718</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Today&apos;s Logged In Users-Reservations</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>false</showDetails>
+    <sortColumn>FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LOGIN_DATE</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

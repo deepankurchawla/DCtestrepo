@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When FSC confirms there was nothing wrong with the aircraft during any season other than summer:</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Aircraft air conditioning not working-FSC confirms nothing wrong in any season</name>
+    <style>none</style>
+    <subject>Aircraft air conditioning not working</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

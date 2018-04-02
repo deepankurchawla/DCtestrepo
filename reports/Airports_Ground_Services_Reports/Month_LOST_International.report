@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_41012702</developerName>
+        <masterLabel>Case Category Report</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case.Category__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost-Domestic</sourceValue>
+            </sourceValues>
+            <value>LOST Domestic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost-International</sourceValue>
+            </sourceValues>
+            <value>LOST International</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pilfered</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pilferage</sourceValue>
+            </sourceValues>
+            <value>Pilfered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Torn / Damaged</sourceValue>
+            </sourceValues>
+            <value>Torn &amp; Damage</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Short-Landing</sourceValue>
+            </sourceValues>
+            <value>Short Landing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost &amp; Found-International</sourceValue>
+            </sourceValues>
+            <value>Lost &amp; Found International</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost &amp; Found-Domestic</sourceValue>
+            </sourceValues>
+            <value>Lost &amp; Found Domestic</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Case.Category__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>STATUS</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.PNR_No__c</field>
+    </columns>
+    <columns>
+        <field>Case.Sub_Category__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Departure_Station__c</field>
+    </columns>
+    <columns>
+        <field>Case.Arrival_Station__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_41012702</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.Department__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Airport Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Complaint</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_41012702</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LOST International</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>AGE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Month LOST International</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

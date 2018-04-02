@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Catering Service Complaints_Availability (If meal was not pre allocated)</name>
+    <style>none</style>
+    <subject>Catering Service Complaints- Availability (If meal was not pre allocated)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

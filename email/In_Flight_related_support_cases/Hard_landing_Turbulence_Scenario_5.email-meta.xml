@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Complaint from the Passenger: They crossed reciprocal traffic at same level. Wants to know if visual separation is a normal norm in aviation or was it a near miss</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Hard landing/Turbulence Scenario 5</name>
+    <style>none</style>
+    <subject>Hard landing/Turbulence</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

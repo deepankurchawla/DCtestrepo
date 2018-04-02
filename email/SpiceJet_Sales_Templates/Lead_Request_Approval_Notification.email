@@ -1,0 +1,8 @@
+Hi,
+
+The request for creation of agency - {!Lead.Company} has been approved.
+
+Approval Comments - {!NullValue(ApprovalRequest.Comments, "NA")}
+
+Thanks,
+salesforce.com

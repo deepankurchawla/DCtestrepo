@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Central_Sales_Coordinator</submitter>
+        <type>role</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Account__c</field>
+        <field>Product_Role__c</field>
+        <field>Status__c</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Email_to_Sales_Head</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Update_Approval_Status</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Central_Sales_Coordinators</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>User.UserRole</field>
+                <operation>equals</operation>
+                <value>Central Sales Coordinator</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approval by Central Sales Coordinator</label>
+        <name>Approval_by_Central_Sales_Coordinator</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>shilpa.bhatia@spicejet.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Approval By Sales Head</label>
+        <name>Approval_By_Sales_Head</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    ISPICKVAL( Status__c , &apos;Draft&apos;),
+    Account__r.RecordType.DeveloperName == &apos;Travel_Agency&apos;,
+    OR(
+    	AND(
+    		$UserRole.DeveloperName != &apos;Central_Sales_Coordinator&apos;,
+    		ISBLANK( Navitaire_ID__c ),
+    		NOT( Created_in_Navitaire__c )
+    	),
+    	AND(
+    		$UserRole.DeveloperName == &apos;Central_Sales_Coordinator&apos;,
+    		NOT(ISBLANK( Navitaire_ID__c )),
+    		NOT( Created_in_Navitaire__c )
+    	)
+    ),
+    OR(
+        Owner:User.Profile.Name = &apos;SpiceJet - Trade Sales&apos;,
+        Owner:User.Profile.Name = &apos;SpiceJet - Corporate Sales&apos;
+    )
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Alert_to_IT_Team_for_creating_Navitarie_Id</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Email_to_Central_Coordinators</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Status_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>TA Add-On Product Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

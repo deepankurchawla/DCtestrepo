@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Central_Sales_Coordinator</submitter>
+        <type>role</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Company</field>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Channel__c</field>
+        <field>Commissionable__c</field>
+        <field>Status</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>renu.raina@spicejet.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>ISPICKVAL( Region__c , &apos;North&apos;)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Approval Step 1</label>
+        <name>Approval_Step_1</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>oriann.dcunha@spicejet.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(
+    NOT(ISPICKVAL( Region__c , &apos;North&apos; )),
+    AND(
+        ISPICKVAL( Region__c, &apos;North&apos; ),
+        OR(WEB_Discount__c &gt; 0.3,
+           Corporate_Discount__c &gt; 0.8
+          )
+    )
+)</formula>
+        </entryCriteria>
+        <label>Approval Step 2</label>
+        <name>Approval_Step_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>For Corporate</description>
+    <emailTemplate>SpiceJet_Sales_Templates/Corporate_Approval_request</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    ISPICKVAL( Approval_Status__c , &apos;Draft&apos;),
+    RecordType.DeveloperName == &apos;Corporate&apos;,
+    ISBLANK( Navitaire_Id__c ),
+    OR(
+        Owner:User.Profile.Name = &apos;SpiceJet - Trade Sales&apos;,
+        Owner:User.Profile.Name = &apos;SpiceJet - Corporate Sales&apos;
+    )
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Alert_to_IT_Team_for_creating_Navitarie_Id</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Approval_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Approval_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Approval_Status_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Corporate Lead Approval Process</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

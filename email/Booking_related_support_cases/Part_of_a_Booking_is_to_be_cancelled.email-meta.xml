@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>e.g. 1 Passenger’s reservation out of 4 Passengers needs to be cancelled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Part of a Booking is to be cancelled</name>
+    <style>none</style>
+    <subject>Part of a Booking is to be cancelled</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

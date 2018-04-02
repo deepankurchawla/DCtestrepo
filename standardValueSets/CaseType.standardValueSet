@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Query</fullName>
+        <default>false</default>
+        <label>Query</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request</fullName>
+        <default>false</default>
+        <label>Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Complaint</fullName>
+        <default>false</default>
+        <label>Complaint</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appreciation</fullName>
+        <default>false</default>
+        <label>Appreciation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suggestion/ Feedback</fullName>
+        <default>false</default>
+        <label>Suggestion/ Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>InApplicable</fullName>
+        <default>false</default>
+        <label>InApplicable</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SpiceVacations Lead</fullName>
+        <default>false</default>
+        <label>SpiceVacations Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reservation Admin Request</fullName>
+        <default>false</default>
+        <label>Reservation Admin Request</label>
+    </standardValue>
+</StandardValueSet>

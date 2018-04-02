@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Airport__c</fullName>
+        <externalId>false</externalId>
+        <label>Airport</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agartala (IXA)</fullName>
+                    <default>false</default>
+                    <label>Agartala (IXA)</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad (AMD)</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad (AMD)</label>
+                </value>
+                <value>
+                    <fullName>Aizawl (AJL)</fullName>
+                    <default>false</default>
+                    <label>Aizawl (AJL)</label>
+                </value>
+                <value>
+                    <fullName>Amritsar (ATQ)</fullName>
+                    <default>false</default>
+                    <label>Amritsar (ATQ)</label>
+                </value>
+                <value>
+                    <fullName>Bagdogra (IXB)</fullName>
+                    <default>false</default>
+                    <label>Bagdogra (IXB)</label>
+                </value>
+                <value>
+                    <fullName>Bangkok (BKK)</fullName>
+                    <default>false</default>
+                    <label>Bangkok (BKK)</label>
+                </value>
+                <value>
+                    <fullName>Belagavi (IXG)</fullName>
+                    <default>false</default>
+                    <label>Belagavi (IXG)</label>
+                </value>
+                <value>
+                    <fullName>Bengaluru (BLR)</fullName>
+                    <default>false</default>
+                    <label>Bengaluru (BLR)</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh (IXC)</fullName>
+                    <default>false</default>
+                    <label>Chandigarh (IXC)</label>
+                </value>
+                <value>
+                    <fullName>Chennai (MAA)</fullName>
+                    <default>false</default>
+                    <label>Chennai (MAA)</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore (CJB)</fullName>
+                    <default>false</default>
+                    <label>Coimbatore (CJB)</label>
+                </value>
+                <value>
+                    <fullName>Colombo (CMB)</fullName>
+                    <default>false</default>
+                    <label>Colombo (CMB)</label>
+                </value>
+                <value>
+                    <fullName>Dehradun (DED)</fullName>
+                    <default>false</default>
+                    <label>Dehradun (DED)</label>
+                </value>
+                <value>
+                    <fullName>Delhi (DEL)</fullName>
+                    <default>false</default>
+                    <label>Delhi (DEL)</label>
+                </value>
+                <value>
+                    <fullName>Dharamshala (DHM)</fullName>
+                    <default>false</default>
+                    <label>Dharamshala (DHM)</label>
+                </value>
+                <value>
+                    <fullName>Dibrugarh (DIB)</fullName>
+                    <default>false</default>
+                    <label>Dibrugarh (DIB)</label>
+                </value>
+                <value>
+                    <fullName>Dubai (DXB)</fullName>
+                    <default>false</default>
+                    <label>Dubai (DXB)</label>
+                </value>
+                <value>
+                    <fullName>Goa (GOI)</fullName>
+                    <default>false</default>
+                    <label>Goa (GOI)</label>
+                </value>
+                <value>
+                    <fullName>Gorakhpur (GOP)</fullName>
+                    <default>false</default>
+                    <label>Gorakhpur (GOP)</label>
+                </value>
+                <value>
+                    <fullName>Guwahati (GAU)</fullName>
+                    <default>false</default>
+                    <label>Guwahati (GAU)</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad (HYD)</fullName>
+                    <default>false</default>
+                    <label>Hyderabad (HYD)</label>
+                </value>
+                <value>
+                    <fullName>Jabalpur (JLR)</fullName>
+                    <default>false</default>
+                    <label>Jabalpur (JLR)</label>
+                </value>
+                <value>
+                    <fullName>Jaipur (JAI)</fullName>
+                    <default>false</default>
+                    <label>Jaipur (JAI)</label>
+                </value>
+                <value>
+                    <fullName>Jammu (IXJ)</fullName>
+                    <default>false</default>
+                    <label>Jammu (IXJ)</label>
+                </value>
+                <value>
+                    <fullName>Jodhpur (JDH)</fullName>
+                    <default>false</default>
+                    <label>Jodhpur (JDH)</label>
+                </value>
+                <value>
+                    <fullName>Kabul (KBL)</fullName>
+                    <default>false</default>
+                    <label>Kabul (KBL)</label>
+                </value>
+                <value>
+                    <fullName>Kochi (COK)</fullName>
+                    <default>false</default>
+                    <label>Kochi (COK)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata (CCU)</fullName>
+                    <default>false</default>
+                    <label>Kolkata (CCU)</label>
+                </value>
+                <value>
+                    <fullName>Kozhikode (CCJ)</fullName>
+                    <default>false</default>
+                    <label>Kozhikode (CCJ)</label>
+                </value>
+                <value>
+                    <fullName>Madurai (IXM)</fullName>
+                    <default>false</default>
+                    <label>Madurai (IXM)</label>
+                </value>
+                <value>
+                    <fullName>Male (MLE)</fullName>
+                    <default>false</default>
+                    <label>Male (MLE)</label>
+                </value>
+                <value>
+                    <fullName>Mangalore (IXE)</fullName>
+                    <default>false</default>
+                    <label>Mangalore (IXE)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai (BOM)</fullName>
+                    <default>false</default>
+                    <label>Mumbai (BOM)</label>
+                </value>
+                <value>
+                    <fullName>Muscat (MCT)</fullName>
+                    <default>false</default>
+                    <label>Muscat (MCT)</label>
+                </value>
+                <value>
+                    <fullName>Port Blair (IXZ)</fullName>
+                    <default>false</default>
+                    <label>Port Blair (IXZ)</label>
+                </value>
+                <value>
+                    <fullName>Pune (PNQ)</fullName>
+                    <default>false</default>
+                    <label>Pune (PNQ)</label>
+                </value>
+                <value>
+                    <fullName>Rajahmundry (RJA)</fullName>
+                    <default>false</default>
+                    <label>Rajahmundry (RJA)</label>
+                </value>
+                <value>
+                    <fullName>Silchar (IXS)</fullName>
+                    <default>false</default>
+                    <label>Silchar (IXS)</label>
+                </value>
+                <value>
+                    <fullName>Srinagar (SXR)</fullName>
+                    <default>false</default>
+                    <label>Srinagar (SXR)</label>
+                </value>
+                <value>
+                    <fullName>Tirupati (TIR)</fullName>
+                    <default>false</default>
+                    <label>Tirupati (TIR)</label>
+                </value>
+                <value>
+                    <fullName>Trivandrum (TRV)</fullName>
+                    <default>false</default>
+                    <label>Trivandrum (TRV)</label>
+                </value>
+                <value>
+                    <fullName>Tuticorin (TCR)</fullName>
+                    <default>false</default>
+                    <label>Tuticorin (TCR)</label>
+                </value>
+                <value>
+                    <fullName>Udaipur (UDR)</fullName>
+                    <default>false</default>
+                    <label>Udaipur (UDR)</label>
+                </value>
+                <value>
+                    <fullName>Varanasi (VNS)</fullName>
+                    <default>false</default>
+                    <label>Varanasi (VNS)</label>
+                </value>
+                <value>
+                    <fullName>Vijayawada (VGA)</fullName>
+                    <default>false</default>
+                    <label>Vijayawada (VGA)</label>
+                </value>
+                <value>
+                    <fullName>Vishkhapatnam (VTZ)</fullName>
+                    <default>false</default>
+                    <label>Vishkhapatnam (VTZ)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Delhi</fullName>
+                    <default>false</default>
+                    <label>New Delhi</label>
+                </value>
+                <value>
+                    <fullName>Guwahati</fullName>
+                    <default>false</default>
+                    <label>Guwahati</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Count__c</fullName>
+        <description>Backend field to get the correct count of users in login history reports</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <description>Department Dropdown</description>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administration</fullName>
+                    <default>false</default>
+                    <label>Administration</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Revenue</fullName>
+                    <default>false</default>
+                    <label>Ancillary Revenue</label>
+                </value>
+                <value>
+                    <fullName>Cargo</fullName>
+                    <default>false</default>
+                    <label>Cargo</label>
+                </value>
+                <value>
+                    <fullName>Catering</fullName>
+                    <default>false</default>
+                    <label>Catering</label>
+                </value>
+                <value>
+                    <fullName>Centre Of Excellence</fullName>
+                    <default>false</default>
+                    <label>Centre Of Excellence</label>
+                </value>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>Corporate Affairs</fullName>
+                    <default>false</default>
+                    <label>Corporate Affairs</label>
+                </value>
+                <value>
+                    <fullName>Corporate Strategy &amp; Projects</fullName>
+                    <default>false</default>
+                    <label>Corporate Strategy &amp; Projects</label>
+                </value>
+                <value>
+                    <fullName>Customer Experience</fullName>
+                    <default>false</default>
+                    <label>Customer Experience</label>
+                </value>
+                <value>
+                    <fullName>Customer Experience &amp; Product Development</fullName>
+                    <default>false</default>
+                    <label>Customer Experience &amp; Product Development</label>
+                </value>
+                <value>
+                    <fullName>DTD Cargo</fullName>
+                    <default>false</default>
+                    <label>DTD Cargo</label>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                    <label>Engineering</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Flight Operations</fullName>
+                    <default>false</default>
+                    <label>Flight Operations</label>
+                </value>
+                <value>
+                    <fullName>Flight Safety</fullName>
+                    <default>false</default>
+                    <label>Flight Safety</label>
+                </value>
+                <value>
+                    <fullName>Govt. &amp; Regulatory Affairs</fullName>
+                    <default>false</default>
+                    <label>Govt. &amp; Regulatory Affairs</label>
+                </value>
+                <value>
+                    <fullName>Ground Services</fullName>
+                    <default>false</default>
+                    <label>Ground Services</label>
+                </value>
+                <value>
+                    <fullName>Human Resources</fullName>
+                    <default>false</default>
+                    <label>Human Resources</label>
+                </value>
+                <value>
+                    <fullName>In Flight Services</fullName>
+                    <default>false</default>
+                    <label>In Flight Services</label>
+                </value>
+                <value>
+                    <fullName>Information Technology</fullName>
+                    <default>false</default>
+                    <label>Information Technology</label>
+                </value>
+                <value>
+                    <fullName>Legal &amp; Company Secretary</fullName>
+                    <default>false</default>
+                    <label>Legal &amp; Company Secretary</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Medical</fullName>
+                    <default>false</default>
+                    <label>Medical</label>
+                </value>
+                <value>
+                    <fullName>Merchandising</fullName>
+                    <default>false</default>
+                    <label>Merchandising</label>
+                </value>
+                <value>
+                    <fullName>Network Planning</fullName>
+                    <default>false</default>
+                    <label>Network Planning</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Reservations</fullName>
+                    <default>false</default>
+                    <label>Reservations</label>
+                </value>
+                <value>
+                    <fullName>Revenue Management</fullName>
+                    <default>false</default>
+                    <label>Revenue Management</label>
+                </value>
+                <value>
+                    <fullName>Rostering</fullName>
+                    <default>false</default>
+                    <label>Rostering</label>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Sales &amp; Distribution</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Profile_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Profile.Name</formula>
+        <label>Profile Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Del</fullName>
+                    <default>false</default>
+                    <label>Del</label>
+                </value>
+                <value>
+                    <fullName>ASM</fullName>
+                    <default>false</default>
+                    <label>ASM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Role_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>UserRole.DeveloperName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Role Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>East</fullName>
+                    <default>false</default>
+                    <label>East</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Airport_Ground_Services_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>Airport__c</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Ground Services and Airports</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Airport &amp; Ground Services Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Airport_Managers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>Airport__c</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>equals</operation>
+            <value>Airport Manager</value>
+        </filters>
+        <label>Airport Managers</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Cargo_Reservations</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MARKETING_USER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Cargo Reservations</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Cargo Reservations</label>
+    </listViews>
+    <listViews>
+        <fullName>Chatter_Free_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>n</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Chatter Free Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Customer_Experience</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Customer Experience</value>
+        </filters>
+        <label>Customer Experience</label>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>EMPLOYEE_NUMBER</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Sales</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Sales Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Today_s_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s Users</label>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

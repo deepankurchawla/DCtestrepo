@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERNAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <columns>
+        <field>ACTIVE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User.Count__c</field>
+    </columns>
+    <description>Cargo User Login Report</description>
+    <filter>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cargo Air to Air User,Cargo Door to Door User,Cargo Management</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LOGIN_DATETIME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cargo User Login Report</name>
+    <params>
+        <name>active</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LOGIN_DATETIME</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

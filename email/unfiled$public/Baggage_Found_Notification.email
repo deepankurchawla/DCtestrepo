@@ -1,0 +1,6 @@
+The Baggage #: {!BIR_Tracer__c.Baggage__c} related to Case - {!BIR_Tracer__c.Related_Case_Number__c} is found at airport : {!BIR_Tracer__c.Airport__c}.
+
+Comments : {!BIR_Tracer__c.Comments__c}
+
+Case Link : https://na30.salesforce.com/{!BIR_Tracer__c.BIR__c}
+BIR Tracer Link : {!BIR_Tracer__c.Link}

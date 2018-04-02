@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CasesPerEntitlement</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>To be used by Trigger to tag entitlement record on Case</description>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aircraft Interior</fullName>
+                    <default>false</default>
+                    <label>Aircraft Interior</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Revenue</fullName>
+                    <default>false</default>
+                    <label>Ancillary Revenue</label>
+                </value>
+                <value>
+                    <fullName>Atom IVR</fullName>
+                    <default>false</default>
+                    <label>Atom IVR</label>
+                </value>
+                <value>
+                    <fullName>Bad Landing</fullName>
+                    <default>false</default>
+                    <label>Bad Landing</label>
+                </value>
+                <value>
+                    <fullName>Cargo Services</fullName>
+                    <default>false</default>
+                    <label>Cargo Services</label>
+                </value>
+                <value>
+                    <fullName>CAR- Online Bank Transfer</fullName>
+                    <default>false</default>
+                    <label>CAR- Online Bank Transfer</label>
+                </value>
+                <value>
+                    <fullName>Catering - Meal Quality</fullName>
+                    <default>false</default>
+                    <label>Catering - Meal Quality</label>
+                </value>
+                <value>
+                    <fullName>Catering - Meal Quantity</fullName>
+                    <default>false</default>
+                    <label>Catering - Meal Quantity</label>
+                </value>
+                <value>
+                    <fullName>Catering Service Complaints</fullName>
+                    <default>false</default>
+                    <label>Catering Service Complaints</label>
+                </value>
+                <value>
+                    <fullName>Compensation - Baggage Mishandling</fullName>
+                    <default>false</default>
+                    <label>Compensation - Baggage Mishandling</label>
+                </value>
+                <value>
+                    <fullName>Compensation - Flight Cancellation</fullName>
+                    <default>false</default>
+                    <label>Compensation - Flight Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Compensation - NEGBAL</fullName>
+                    <default>false</default>
+                    <label>Compensation - NEGBAL</label>
+                </value>
+                <value>
+                    <fullName>Contents Damaged-Domestic</fullName>
+                    <default>false</default>
+                    <label>Contents Damaged-Domestic</label>
+                </value>
+                <value>
+                    <fullName>Contents Damaged-International</fullName>
+                    <default>false</default>
+                    <label>Contents Damaged-International</label>
+                </value>
+                <value>
+                    <fullName>Denied Boarding</fullName>
+                    <default>false</default>
+                    <label>Denied Boarding</label>
+                </value>
+                <value>
+                    <fullName>Flight Cancellation - Controllable</fullName>
+                    <default>false</default>
+                    <label>Flight Cancellation - Controllable</label>
+                </value>
+                <value>
+                    <fullName>Flight Cancellation - Uncontrollable</fullName>
+                    <default>false</default>
+                    <label>Flight Cancellation - Uncontrollable</label>
+                </value>
+                <value>
+                    <fullName>Flight Delay - Controllable</fullName>
+                    <default>false</default>
+                    <label>Flight Delay - Controllable</label>
+                </value>
+                <value>
+                    <fullName>Flight Delay - Uncontrollable</fullName>
+                    <default>false</default>
+                    <label>Flight Delay - Uncontrollable</label>
+                </value>
+                <value>
+                    <fullName>Flight Schedule Change</fullName>
+                    <default>false</default>
+                    <label>Flight Schedule Change</label>
+                </value>
+                <value>
+                    <fullName>Internet Error</fullName>
+                    <default>false</default>
+                    <label>Internet Error</label>
+                </value>
+                <value>
+                    <fullName>IROP - No Information</fullName>
+                    <default>false</default>
+                    <label>IROP - No Information</label>
+                </value>
+                <value>
+                    <fullName>Itineraries Not Received</fullName>
+                    <default>false</default>
+                    <label>Itineraries Not Received</label>
+                </value>
+                <value>
+                    <fullName>Legal Notice</fullName>
+                    <default>false</default>
+                    <label>Legal Notice</label>
+                </value>
+                <value>
+                    <fullName>Lost &amp; Found-Domestic</fullName>
+                    <default>false</default>
+                    <label>Lost &amp; Found-Domestic</label>
+                </value>
+                <value>
+                    <fullName>Lost &amp; Found-International</fullName>
+                    <default>false</default>
+                    <label>Lost &amp; Found-International</label>
+                </value>
+                <value>
+                    <fullName>Lost-Domestic</fullName>
+                    <default>false</default>
+                    <label>Lost-Domestic</label>
+                </value>
+                <value>
+                    <fullName>Lost-International</fullName>
+                    <default>false</default>
+                    <label>Lost-International</label>
+                </value>
+                <value>
+                    <fullName>Mishandled</fullName>
+                    <default>false</default>
+                    <label>Mishandled</label>
+                </value>
+                <value>
+                    <fullName>Misinformation</fullName>
+                    <default>false</default>
+                    <label>Misinformation</label>
+                </value>
+                <value>
+                    <fullName>Mobile Banking</fullName>
+                    <default>false</default>
+                    <label>Mobile Banking</label>
+                </value>
+                <value>
+                    <fullName>Navitaire Error</fullName>
+                    <default>false</default>
+                    <label>Navitaire Error</label>
+                </value>
+                <value>
+                    <fullName>Net Banking</fullName>
+                    <default>false</default>
+                    <label>Net Banking</label>
+                </value>
+                <value>
+                    <fullName>Offloaded</fullName>
+                    <default>false</default>
+                    <label>Offloaded</label>
+                </value>
+                <value>
+                    <fullName>On-Board Product Sale</fullName>
+                    <default>false</default>
+                    <label>On-Board Product Sale</label>
+                </value>
+                <value>
+                    <fullName>Online Bank Transfer</fullName>
+                    <default>false</default>
+                    <label>Online Bank Transfer</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Overbooking/Denied Boarding</fullName>
+                    <default>false</default>
+                    <label>Overbooking/Denied Boarding</label>
+                </value>
+                <value>
+                    <fullName>Payment Clarification</fullName>
+                    <default>false</default>
+                    <label>Payment Clarification</label>
+                </value>
+                <value>
+                    <fullName>Payment Declined</fullName>
+                    <default>false</default>
+                    <label>Payment Declined</label>
+                </value>
+                <value>
+                    <fullName>Payment Gateway Issues</fullName>
+                    <default>false</default>
+                    <label>Payment Gateway Issues</label>
+                </value>
+                <value>
+                    <fullName>Payment Pending</fullName>
+                    <default>false</default>
+                    <label>Payment Pending</label>
+                </value>
+                <value>
+                    <fullName>Payment Pending but Charged</fullName>
+                    <default>false</default>
+                    <label>Payment Pending but Charged</label>
+                </value>
+                <value>
+                    <fullName>Pilfered</fullName>
+                    <default>false</default>
+                    <label>Pilfered</label>
+                </value>
+                <value>
+                    <fullName>Promotions/Campaigns</fullName>
+                    <default>false</default>
+                    <label>Promotions/Campaigns</label>
+                </value>
+                <value>
+                    <fullName>Refund Complaints</fullName>
+                    <default>false</default>
+                    <label>Refund Complaints</label>
+                </value>
+                <value>
+                    <fullName>Rude Behavior</fullName>
+                    <default>false</default>
+                    <label>Rude Behavior</label>
+                </value>
+                <value>
+                    <fullName>Rude Behaviour</fullName>
+                    <default>false</default>
+                    <label>Rude Behaviour</label>
+                </value>
+                <value>
+                    <fullName>Security Regulations</fullName>
+                    <default>false</default>
+                    <label>Security Regulations</label>
+                </value>
+                <value>
+                    <fullName>Service Complaint</fullName>
+                    <default>false</default>
+                    <label>Service Complaint</label>
+                </value>
+                <value>
+                    <fullName>Spice Club issues</fullName>
+                    <default>false</default>
+                    <label>Spice Club issues</label>
+                </value>
+                <value>
+                    <fullName>Spicejet - Products / Policies / Procedures</fullName>
+                    <default>false</default>
+                    <label>Spicejet - Products / Policies / Procedures</label>
+                </value>
+                <value>
+                    <fullName>Staff Error</fullName>
+                    <default>false</default>
+                    <label>Staff Error</label>
+                </value>
+                <value>
+                    <fullName>Torn / Damaged</fullName>
+                    <default>false</default>
+                    <label>Torn / Damaged</label>
+                </value>
+                <value>
+                    <fullName>Unclaimed Baggage</fullName>
+                    <default>false</default>
+                    <label>Unclaimed Baggage</label>
+                </value>
+                <value>
+                    <fullName>Voucher - Service Recovery</fullName>
+                    <default>false</default>
+                    <label>Voucher - Service Recovery</label>
+                </value>
+                <value>
+                    <fullName>Wire Transfer</fullName>
+                    <default>false</default>
+                    <label>Wire Transfer</label>
+                </value>
+                <value>
+                    <fullName>Compliment Medical Assistance</fullName>
+                    <default>false</default>
+                    <label>Compliment Medical Assistance</label>
+                </value>
+                <value>
+                    <fullName>Wrong Tagging</fullName>
+                    <default>false</default>
+                    <label>Wrong Tagging</label>
+                </value>
+                <value>
+                    <fullName>Late Delivered(Door to Door)</fullName>
+                    <default>false</default>
+                    <label>Late Delivered(Door to Door)</label>
+                </value>
+                <value>
+                    <fullName>Late Received (Air to Air)</fullName>
+                    <default>false</default>
+                    <label>Late Received (Air to Air)</label>
+                </value>
+                <value>
+                    <fullName>Lost &amp; Found-Cargo</fullName>
+                    <default>false</default>
+                    <label>Lost &amp; Found-Cargo</label>
+                </value>
+                <value>
+                    <fullName>Lost-Cargo</fullName>
+                    <default>false</default>
+                    <label>Lost-Cargo</label>
+                </value>
+                <value>
+                    <fullName>Space Allocation</fullName>
+                    <default>false</default>
+                    <label>Space Allocation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContractLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <description>To be used by Trigger to tag entitlement record on Case</description>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Airport Services</fullName>
+                    <default>false</default>
+                    <label>Airport Services</label>
+                </value>
+                <value>
+                    <fullName>Ancillary</fullName>
+                    <default>false</default>
+                    <label>Ancillary</label>
+                </value>
+                <value>
+                    <fullName>Cargo</fullName>
+                    <default>false</default>
+                    <label>Cargo</label>
+                </value>
+                <value>
+                    <fullName>Catering</fullName>
+                    <default>false</default>
+                    <label>Catering</label>
+                </value>
+                <value>
+                    <fullName>Customer Experience</fullName>
+                    <default>false</default>
+                    <label>Customer Experience</label>
+                </value>
+                <value>
+                    <fullName>Engineering/ MCC</fullName>
+                    <default>false</default>
+                    <label>Engineering/ MCC</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Flight Ops</fullName>
+                    <default>false</default>
+                    <label>Flight Ops</label>
+                </value>
+                <value>
+                    <fullName>FSC</fullName>
+                    <default>false</default>
+                    <label>FSC</label>
+                </value>
+                <value>
+                    <fullName>Groupdesk</fullName>
+                    <default>false</default>
+                    <label>Groupdesk</label>
+                </value>
+                <value>
+                    <fullName>In- Flight</fullName>
+                    <default>false</default>
+                    <label>In- Flight</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Marketing/ Products</fullName>
+                    <default>false</default>
+                    <label>Marketing/ Products</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Reservations</fullName>
+                    <default>false</default>
+                    <label>Reservations</label>
+                </value>
+                <value>
+                    <fullName>Revenue</fullName>
+                    <default>false</default>
+                    <label>Revenue</label>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                    <label>Sales</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field will be used to create key for entitlement record which will be used in Trigger to stamp entitlement record on case.The key will be created by WF rule</description>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>IsPerIncident</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RemainingCases</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ServiceContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SlaProcessId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>StatusIndicator</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sub_Category__c</fullName>
+        <description>To be used by Trigger to tag entitlement record on Case</description>
+        <externalId>false</externalId>
+        <label>Sub-Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Baggage Interchange</fullName>
+                    <default>false</default>
+                    <label>Baggage Interchange</label>
+                </value>
+                <value>
+                    <fullName>Booking Error</fullName>
+                    <default>false</default>
+                    <label>Booking Error</label>
+                </value>
+                <value>
+                    <fullName>Carry on Item - Lost</fullName>
+                    <default>false</default>
+                    <label>Carry on Item - Lost</label>
+                </value>
+                <value>
+                    <fullName>Carry on Item - Lost &amp; Found</fullName>
+                    <default>false</default>
+                    <label>Carry on Item - Lost &amp; Found</label>
+                </value>
+                <value>
+                    <fullName>Carry-on - Mishandling - SRA Item</fullName>
+                    <default>false</default>
+                    <label>Carry-on - Mishandling - SRA Item</label>
+                </value>
+                <value>
+                    <fullName>Compensation Claimed</fullName>
+                    <default>false</default>
+                    <label>Compensation Claimed</label>
+                </value>
+                <value>
+                    <fullName>Compliment</fullName>
+                    <default>false</default>
+                    <label>Compliment</label>
+                </value>
+                <value>
+                    <fullName>Compliment - Medical Assistance</fullName>
+                    <default>false</default>
+                    <label>Compliment - Medical Assistance</label>
+                </value>
+                <value>
+                    <fullName>Duplicate Bookings</fullName>
+                    <default>false</default>
+                    <label>Duplicate Bookings</label>
+                </value>
+                <value>
+                    <fullName>Duplicate Complaint</fullName>
+                    <default>false</default>
+                    <label>Duplicate Complaint</label>
+                </value>
+                <value>
+                    <fullName>Gate No-Show</fullName>
+                    <default>false</default>
+                    <label>Gate No-Show</label>
+                </value>
+                <value>
+                    <fullName>Guest Error</fullName>
+                    <default>false</default>
+                    <label>Guest Error</label>
+                </value>
+                <value>
+                    <fullName>Internet Booking</fullName>
+                    <default>false</default>
+                    <label>Internet Booking</label>
+                </value>
+                <value>
+                    <fullName>Invalid Complaint</fullName>
+                    <default>false</default>
+                    <label>Invalid Complaint</label>
+                </value>
+                <value>
+                    <fullName>LOPA - Voucher</fullName>
+                    <default>false</default>
+                    <label>LOPA - Voucher</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Mis-Information</fullName>
+                    <default>false</default>
+                    <label>Mis-Information</label>
+                </value>
+                <value>
+                    <fullName>Misuse - Credit Card/Credit Shell/Voucher</fullName>
+                    <default>false</default>
+                    <label>Misuse - Credit Card/Credit Shell/Voucher</label>
+                </value>
+                <value>
+                    <fullName>No Show</fullName>
+                    <default>false</default>
+                    <label>No Show</label>
+                </value>
+                <value>
+                    <fullName>Other complaints</fullName>
+                    <default>false</default>
+                    <label>Other complaints</label>
+                </value>
+                <value>
+                    <fullName>Refund Claimed</fullName>
+                    <default>false</default>
+                    <label>Refund Claimed</label>
+                </value>
+                <value>
+                    <fullName>Service Complaint</fullName>
+                    <default>false</default>
+                    <label>Service Complaint</label>
+                </value>
+                <value>
+                    <fullName>Special Request - Humanitarian Grounds</fullName>
+                    <default>false</default>
+                    <label>Special Request - Humanitarian Grounds</label>
+                </value>
+                <value>
+                    <fullName>Stretcher / Oxygen Request</fullName>
+                    <default>false</default>
+                    <label>Stretcher / Oxygen Request</label>
+                </value>
+                <value>
+                    <fullName>Suggestions/Feedbacks</fullName>
+                    <default>false</default>
+                    <label>Suggestions/Feedbacks</label>
+                </value>
+                <value>
+                    <fullName>Travel Certificate Request</fullName>
+                    <default>false</default>
+                    <label>Travel Certificate Request</label>
+                </value>
+                <value>
+                    <fullName>Voucher - Service Recovery</fullName>
+                    <default>false</default>
+                    <label>Voucher - Service Recovery</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Cases</fullName>
+                    <default>false</default>
+                    <label>Customer Cases</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Travel Portals/Travel Agents</fullName>
+                    <default>false</default>
+                    <label>Travel Portals/Travel Agents</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>All_Entitlements</fullName>
+        <columns>ENTITLEMENT.NAME</columns>
+        <columns>SLA.NAME</columns>
+        <columns>External_Id__c</columns>
+        <columns>Department__c</columns>
+        <columns>Category__c</columns>
+        <columns>Sub_Department__c</columns>
+        <columns>Sub_Category__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ENTITLEMENT.STARTDATE</columns>
+        <columns>ENTITLEMENT.STATUS</columns>
+        <columns>ENTITLEMENT.ENDDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Entitlements</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ENTITLEMENT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STARTDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.ENDDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ENTITLEMENT.STATUSINDICATOR</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STARTDATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.ENDDATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STARTDATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.ENDDATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STATUS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STARTDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.ENDDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ENTITLEMENT.STATUSINDICATOR</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

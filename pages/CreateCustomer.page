@@ -1,0 +1,2 @@
+<apex:page standardController="Passenger__c" extensions="CreateCustomerExt" action="{!CreateCustomer}">
+</apex:page>

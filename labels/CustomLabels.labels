@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_Deletion_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Deletion Error Message</shortDescription>
+        <value>Cannot delete Spicejet account.</value>
+    </labels>
+    <labels>
+        <fullName>Enter_Navitaire_Id_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter Navitaire Id Error Message</shortDescription>
+        <value>Update the Navitaire Id before approving the Agency/Corporate</value>
+    </labels>
+    <labels>
+        <fullName>Spicejet_Account_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Spicejet Account Id</shortDescription>
+        <value>0013600000PbAhp</value>
+    </labels>
+</CustomLabels>

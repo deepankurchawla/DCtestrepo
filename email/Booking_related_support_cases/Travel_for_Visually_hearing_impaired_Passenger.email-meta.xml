@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Travel for Visually/hearing impaired Passenger</name>
+    <style>none</style>
+    <subject>Travel for Visually/hearing impaired Passenger</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

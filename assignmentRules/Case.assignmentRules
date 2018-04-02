@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Reservation Operations</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>nishat629922@spicejet.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Reservation Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Process_Owner__c</field>
+                <operation>equals</operation>
+                <value>Team Leaders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Relevant_Person__c</field>
+                <operation>equals</operation>
+                <value>Nishat Khan</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Sr%2E General Manager</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>binu060@spicejet.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Process_Owner__c</field>
+                <operation>equals</operation>
+                <value>Sr. Manager</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

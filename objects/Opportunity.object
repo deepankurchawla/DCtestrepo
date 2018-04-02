@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Cargo Air to Air</fullName>
+        <description>For Cargo Air to Air</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Introductory Meeting</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Cargo Door to Door</fullName>
+        <description>For Cargo Door to Door</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Introductory Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Check_In_Lat__c</fullName>
+        <externalId>false</externalId>
+        <label>Check-In Lat</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_In_Lats__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Check-In Lats</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Check_In_Lon__c</fullName>
+        <externalId>false</externalId>
+        <label>Check-In Lon</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_End_Date__c</fullName>
+        <description>for Cargo; when is the contract with client ending; Based on this field a email notification will be triggered to GM/DGM of Cargo for renewal.</description>
+        <externalId>false</externalId>
+        <label>Contract End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Start_Date__c</fullName>
+        <description>for Cargo;when the contract started with the client</description>
+        <externalId>false</externalId>
+        <label>Contract Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Login_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Login Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lost_Reason_Comments__c</fullName>
+        <description>for Cargo;</description>
+        <externalId>false</externalId>
+        <label>Lost Reason Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lost_Reason__c</fullName>
+        <description>for Cargo; to capture opty lost reason</description>
+        <externalId>false</externalId>
+        <label>Lost Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competition</fullName>
+                    <default>false</default>
+                    <label>Competition</label>
+                </value>
+                <value>
+                    <fullName>Lack of Interest</fullName>
+                    <default>false</default>
+                    <label>Lack of Interest</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Pricing</fullName>
+                    <default>false</default>
+                    <label>Pricing</label>
+                </value>
+                <value>
+                    <fullName>Product not Available</fullName>
+                    <default>false</default>
+                    <label>Product not Available</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Origin__c</fullName>
+        <description>for Cargo; Origin of Cargo consignment</description>
+        <externalId>false</externalId>
+        <label>Origin</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ahmedabad</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad</label>
+                </value>
+                <value>
+                    <fullName>Aurangabad</fullName>
+                    <default>false</default>
+                    <label>Aurangabad</label>
+                </value>
+                <value>
+                    <fullName>Baddi</fullName>
+                    <default>false</default>
+                    <label>Baddi</label>
+                </value>
+                <value>
+                    <fullName>Bangalore</fullName>
+                    <default>false</default>
+                    <label>Bangalore</label>
+                </value>
+                <value>
+                    <fullName>Bhiwandi</fullName>
+                    <default>false</default>
+                    <label>Bhiwandi</label>
+                </value>
+                <value>
+                    <fullName>Bhubaneswar</fullName>
+                    <default>false</default>
+                    <label>Bhubaneswar</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh</fullName>
+                    <default>false</default>
+                    <label>Chandigarh</label>
+                </value>
+                <value>
+                    <fullName>Chennai</fullName>
+                    <default>false</default>
+                    <label>Chennai</label>
+                </value>
+                <value>
+                    <fullName>Cochin</fullName>
+                    <default>false</default>
+                    <label>Cochin</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore</fullName>
+                    <default>false</default>
+                    <label>Coimbatore</label>
+                </value>
+                <value>
+                    <fullName>Dehradun</fullName>
+                    <default>false</default>
+                    <label>Dehradun</label>
+                </value>
+                <value>
+                    <fullName>Goa</fullName>
+                    <default>false</default>
+                    <label>Goa</label>
+                </value>
+                <value>
+                    <fullName>Gurgaon</fullName>
+                    <default>false</default>
+                    <label>Gurgaon</label>
+                </value>
+                <value>
+                    <fullName>Guwahati</fullName>
+                    <default>false</default>
+                    <label>Guwahati</label>
+                </value>
+                <value>
+                    <fullName>Haridwar</fullName>
+                    <default>false</default>
+                    <label>Haridwar</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad</fullName>
+                    <default>false</default>
+                    <label>Hyderabad</label>
+                </value>
+                <value>
+                    <fullName>Indore</fullName>
+                    <default>false</default>
+                    <label>Indore</label>
+                </value>
+                <value>
+                    <fullName>Jaipur</fullName>
+                    <default>false</default>
+                    <label>Jaipur</label>
+                </value>
+                <value>
+                    <fullName>Jalandhar</fullName>
+                    <default>false</default>
+                    <label>Jalandhar</label>
+                </value>
+                <value>
+                    <fullName>Kirti Nagar (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Kirti Nagar (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata</fullName>
+                    <default>false</default>
+                    <label>Kolkata</label>
+                </value>
+                <value>
+                    <fullName>Lucknow</fullName>
+                    <default>false</default>
+                    <label>Lucknow</label>
+                </value>
+                <value>
+                    <fullName>Ludhiana</fullName>
+                    <default>false</default>
+                    <label>Ludhiana</label>
+                </value>
+                <value>
+                    <fullName>Mahipalpur (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Mahipalpur (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai</fullName>
+                    <default>false</default>
+                    <label>Mumbai</label>
+                </value>
+                <value>
+                    <fullName>Nagpur</fullName>
+                    <default>false</default>
+                    <label>Nagpur</label>
+                </value>
+                <value>
+                    <fullName>Navi Mumbai</fullName>
+                    <default>false</default>
+                    <label>Navi Mumbai</label>
+                </value>
+                <value>
+                    <fullName>Noida</fullName>
+                    <default>false</default>
+                    <label>Noida</label>
+                </value>
+                <value>
+                    <fullName>Okhla (Delhi)</fullName>
+                    <default>false</default>
+                    <label>Okhla (Delhi)</label>
+                </value>
+                <value>
+                    <fullName>Parwanoo</fullName>
+                    <default>false</default>
+                    <label>Parwanoo</label>
+                </value>
+                <value>
+                    <fullName>Patna</fullName>
+                    <default>false</default>
+                    <label>Patna</label>
+                </value>
+                <value>
+                    <fullName>Pune</fullName>
+                    <default>false</default>
+                    <label>Pune</label>
+                </value>
+                <value>
+                    <fullName>Ranchi</fullName>
+                    <default>false</default>
+                    <label>Ranchi</label>
+                </value>
+                <value>
+                    <fullName>Siliguri</fullName>
+                    <default>false</default>
+                    <label>Siliguri</label>
+                </value>
+                <value>
+                    <fullName>Varanasi</fullName>
+                    <default>false</default>
+                    <label>Varanasi</label>
+                </value>
+                <value>
+                    <fullName>Vijaywada</fullName>
+                    <default>false</default>
+                    <label>Vijaywada</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Quantity_in_Kg__c</fullName>
+        <description>for Cargo; to capture quantity in kg</description>
+        <externalId>false</externalId>
+        <label>Quantity (in Kg)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>for Cargo; to capture region</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>East</fullName>
+                    <default>false</default>
+                    <label>East</label>
+                </value>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Air_to_Air</fullName>
+        <active>true</active>
+        <businessProcess>Cargo Air to Air</businessProcess>
+        <description>for Air to Air Business Process</description>
+        <label>Air to Air</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product not Available</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin__c</picklist>
+            <values>
+                <fullName>Ahmedabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aurangabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baddi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhiwandi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhubaneswar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cochin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gurgaon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haridwar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jalandhar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kirti Nagar %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lucknow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ludhiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mahipalpur %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Navi Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Noida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Okhla %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parwanoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ranchi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siliguri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijaywada</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>All India Contract %28AIC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Door_to_Door</fullName>
+        <active>true</active>
+        <businessProcess>Cargo Door to Door</businessProcess>
+        <description>for Door to Door Business Process</description>
+        <label>Door to Door</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lost_Reason__c</picklist>
+            <values>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product not Available</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin__c</picklist>
+            <values>
+                <fullName>Ahmedabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aurangabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baddi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhiwandi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bhubaneswar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chennai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cochin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coimbatore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dehradun</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gurgaon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guwahati</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haridwar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jalandhar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kirti Nagar %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kolkata</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lucknow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ludhiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mahipalpur %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Navi Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Noida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Okhla %28Delhi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parwanoo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ranchi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Siliguri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Varanasi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vijaywada</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>All India Contract %28AIC%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Contract</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupFilterFields>OPPORTUNITY.NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.SITE</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Check_In</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Check-In</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>&lt;apex:page &gt;
+&lt;script src=&quot;https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCOM1wCPRAvhtnjKOgA8PE5JVQikWxb1fs&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://maps.google.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;
+ 
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;p id=&quot;demo&quot;&gt;Click the button to get your position.&lt;/p&gt;
+ 
+&lt;button onclick=&quot;getLocation()&quot;&gt;Check-In&lt;/button&gt;
+ 
+&lt;div id=&quot;mapholder&quot;&gt;&lt;/div&gt;
+ 
+&lt;script&gt;
+var x = document.getElementById(&quot;demo&quot;);
+ 
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = &quot;Geolocation is not supported by this browser.&quot;;
+    }
+}
+ 
+function showPosition(position) {
+    alert(&apos;some&apos;);
+    var latlon = position.coords.latitude + &quot;,&quot; + position.coords.longitude;
+        var img_url = &quot;http://maps.googleapis.com/maps/api/staticmap?center=&quot;
+    +latlon+&quot;&amp;zoom=14&amp;size=400x300&amp;sensor=false&quot;;
+    document.getElementById(&quot;mapholder&quot;).innerHTML = &quot;&lt;img src=&apos;&quot;+img_url+&quot;&apos;&gt;&quot;;
+}
+ 
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = &quot;User denied the request for Geolocation.&quot;
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = &quot;Location information is unavailable.&quot;
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = &quot;The request to get user location timed out.&quot;
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = &quot;An unknown error occurred.&quot;
+            break;
+    }
+}
+&lt;/script&gt;
+ 
+ 
+&lt;p id=&quot;demo1&quot;&gt;Click the button to get your position.&lt;/p&gt;
+ 
+&lt;button onclick=&quot;getLocation1()&quot;&gt;Check-Out&lt;/button&gt;
+ 
+&lt;div id=&quot;mapholder1&quot;&gt;&lt;/div&gt;
+ 
+&lt;script&gt;
+ 
+ 
+function getLocation1() {
+var x1 = document.getElementById(&quot;demo1&quot;);
+ 
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition1, showError1);
+    } else {
+        x1.innerHTML = &quot;Geolocation is not supported by this browser.&quot;;
+       
+    }
+}
+ 
+function showPosition1(position) {
+alert(&apos;here&apos;);
+    var latlon1 = position.coords.latitude + &quot;,&quot; + position.coords.longitude;
+   
+    var img_url1 = &quot;http://maps.googleapis.com/maps/api/staticmap?center=&quot;
+    +latlon1+&quot;&amp;zoom=14&amp;size=400x300&amp;sensor=false&quot;;
+    document.getElementById(&quot;mapholder1&quot;).innerHTML = &quot;&lt;img src=&apos;&quot;+img_url1+&quot;&apos;&gt;&quot;;
+}
+ 
+function showError1(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x1.innerHTML = &quot;User denied the request for Geolocation.&quot;
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x1.innerHTML = &quot;Location information is unavailable.&quot;
+            break;
+        case error.TIMEOUT:
+            x1.innerHTML = &quot;The request to get user location timed out.&quot;
+            break;
+        case error.UNKNOWN_ERROR:
+            x1.innerHTML = &quot;An unknown error occurred.&quot;
+            break;
+    }
+}
+&lt;/script&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
+ 
+&lt;/apex:page&gt;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Check_In1</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Check-In1</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)} 
+var tsk = new sforce.SObject(&apos;Check-In Lats&apos;); 
+
+
+tsk.WhatId = &apos;{!Opportunity.Id}&apos;; 
+tsk.subject = &apos;Subject1&apos;; 
+
+if(navigator.geolocation){ 
+//browser support geolocation 
+navigator.geolocation.getCurrentPosition(callbackSuccess, callbackError,{enableHighAccuracy:true}); 
+
+}else{ 
+alert(&apos;Navigation is not supported&apos;); 
+} 
+
+function callbackSuccess(position) { 
+
+//get latitude and longitude 
+var lat = position.coords.latitude; 
+var lon = position.coords.longitude; 
+
+tsk.Checkin_Geolocation__Latitude__s=lat; 
+tsk.Checkin_Geolocation__Longitude__s=lon; 
+sforce.connection.create([tsk]); 
+
+window.location.reload(); 
+} 
+
+function callbackError(error) { 
+switch(error.code) { 
+case error.UNKNOWN_ERROR: 
+alert(&quot;UNKNOWN_ERROR.&quot;); 
+break; 
+case error.PERMISSION_DENIED: 
+alert(&quot;PERMISSION_DENIED.&quot;); 
+break; 
+case error.POSITION_UNAVAILABLE: 
+alert(&quot;POSITION_UNAVAILABLE.&quot;); 
+break; 
+case error.TIMEOUT: 
+alert(&quot;TIMEOUT.&quot;); 
+break; 
+} 
+}</url>
+    </webLinks>
+</CustomObject>

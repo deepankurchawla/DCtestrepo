@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_96202058</developerName>
+        <masterLabel>Case Category</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Case.Category__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost-Domestic</sourceValue>
+            </sourceValues>
+            <value>Lost Domestic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost-International</sourceValue>
+            </sourceValues>
+            <value>Lost International</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pilferage</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pilfered</sourceValue>
+            </sourceValues>
+            <value>Pilfered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Torn / Damaged</sourceValue>
+            </sourceValues>
+            <value>Torn and Damage</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost &amp; Found-Domestic</sourceValue>
+            </sourceValues>
+            <value>Lost and Found Domestic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lost &amp; Found-International</sourceValue>
+            </sourceValues>
+            <value>Lost and Found International</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_96202058</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.PNR_No__c</field>
+    </columns>
+    <columns>
+        <field>Case.Sub_Category__c</field>
+    </columns>
+    <columns>
+        <field>ORIGIN</field>
+    </columns>
+    <columns>
+        <field>Case.Departure_Station__c</field>
+    </columns>
+    <columns>
+        <field>Case.Arrival_Station__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Case.Department__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Airport Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Complaint</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lost-Domestic,Lost-International,Pilferage,Pilfered,Short-Landing,Torn / Damaged</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Open,Working,Waiting on Concerned Department,On Hold,Escalated,Closed</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CREATED_DATEONLY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96202058</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Category New</name>
+    <params>
+        <name>units</name>
+        <value>d</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,19 @@
+Hi,
+
+No response has been received as yet from {!Case.Department__c} for Case # {!Case.CaseNumber}. Please ensure that this milestone is completed within the next 2 hrs to avoid milestone violation.
+ 
+Case details are as follows -
+
+Case Owner   :{!Case.OwnerFullName}
+Case Number: {!Case.CaseNumber}
+Type                 : {!Case.Type}
+Status              : {!Case.Status}
+Customer        : {!Case.Account}
+Department    : {!Case.Department__c}
+Category         : {!Case.Category__c}
+Origin               : {!Case.Origin}
+
+Follow this link for more details : {!Case.Link}
+
+Thanks,
+salesforce.com

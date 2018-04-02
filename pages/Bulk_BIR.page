@@ -1,0 +1,76 @@
+<apex:page controller="Bulk_BIR_Ctr" docType="HTML-5.0" sidebar="false">
+    <script type="text/javascript">
+        function SelectAllCustomers(slctAll){
+            console.log('Bazingaa!!!');
+            var x = document.getElementsByClassName("slctPssngr");
+            console.log('-----'+x.length);
+            if(slctAll.checked){
+                for(var i=0 ; i<x.length ; i++){
+                    x[i].checked = true;
+                }            
+            }else{
+                for(var i=0 ; i<x.length ; i++){
+                    x[i].checked = false;
+                }
+            }
+        }
+    </script>
+    
+    <apex:form id="frm">
+        <apex:pageBlock title="Flight Details">
+            <apex:pageBlockSection >
+                <apex:inputText value="{!flight_Number}" label="Flight No." required="true"/><br/>
+                <apex:input label="Departure Date" value="{!departure_Date}" type="date" required="true"/>
+                <apex:input label="Arrival Date" value="{!arrival_Date}" type="date" required="true"/>
+                <apex:inputField value="{!ce.Departure_Station__c}" required="true"/>
+                <apex:inputField value="{!ce.Arrival_Station__c}" required="true"/>                
+            </apex:pageBlockSection>
+            
+            <center>
+                <apex:commandButton value="Get PNR's" action="{!SearchFlightDetail}"/>
+            </center>
+            <apex:pageMessage severity="confirm" strength="2" summary="Cases have been generated." rendered="{!caseList.size > 0}"/>
+            <apex:pageBlockTable value="{!caseList}" var="cse" rendered="{!caseList.size > 0}">
+                <apex:column headerValue="Case Number" title="Case Number">
+                    <apex:outputLink value="/{!cse.Id}" target="_blank">{!cse.CaseNumber}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!cse.PNR_No__c}"/>
+                <apex:column value="{!cse.Contact.Name}"/>
+            </apex:pageBlockTable>
+            
+            <apex:pageBlockSection title="Select PNR" rendered="{!custDetailsList.size > 0}">
+                <apex:inputField value="{!ce.Department__c}" required="true"/>
+                <apex:inputField value="{!ce.Category__c}" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" rendered="{!custDetailsList.size > 0}">
+                <apex:pageBlockTable value="{!custDetailsList}" var="cd">
+                    <apex:column width="5%">
+                        <apex:facet name="header">
+                            <apex:inputCheckbox value="{!selectAll}" onchange="SelectAllCustomers(this);"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!cd.isBaggageLost}" styleClass="slctPssngr"/>
+                    </apex:column>
+                    <apex:column value="{!cd.jDetail.PNR_No__c}"/>
+                    <apex:column value="{!cd.jDetail.Booking__r.Booked_By__r.Name}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <center>
+                <apex:commandButton value="Create BIR" disabled="{!disableCreateBIR}" status="overlayStatus" reRender="frm" action="{!CreateBIRCases}" rendered="{!custDetailsList.size > 0}"/>
+            </center>
+            <apex:outputpanel >
+                <!-- added status when any action performed -->
+                <apex:actionstatus id="overlayStatus">
+                    <apex:facet name="start">
+                        <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb;
+                               height: 100%;opacity:0.65;width:100%;"> 
+                            <div class="waitingHolder" style="top: 40%; width: 500px;left:30%;position:fixed;height: 500px;">
+                                <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                                <span class="waitingDescription">Please Wait...</span>
+                            </div>
+                        </div>
+                    </apex:facet>
+                </apex:actionstatus>
+            </apex:outputpanel>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>FULL_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>LEAD</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <column>Activity.Assigned_To_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SpiceJet - Corporate Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Assigned_To_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SpiceJet - Trade Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Assigned_To_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SpiceJet Sales Coordinator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Assigned_To_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SpiceJet - Trade and Corporate Sales</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IXS VISIT</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2017-07-18</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-07-17</startDate>
+    </timeFrameFilter>
+</Report>

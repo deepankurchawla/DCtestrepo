@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>New_BIR_Tracer</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Airport__c</fullName>
+        <externalId>false</externalId>
+        <label>Airport</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agartala (IXA)</fullName>
+                    <default>false</default>
+                    <label>Agartala (IXA)</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad (AMD)</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad (AMD)</label>
+                </value>
+                <value>
+                    <fullName>Aizawl (AJL)</fullName>
+                    <default>false</default>
+                    <label>Aizawl (AJL)</label>
+                </value>
+                <value>
+                    <fullName>Amritsar (ATQ)</fullName>
+                    <default>false</default>
+                    <label>Amritsar (ATQ)</label>
+                </value>
+                <value>
+                    <fullName>Bagdogra (IXB)</fullName>
+                    <default>false</default>
+                    <label>Bagdogra (IXB)</label>
+                </value>
+                <value>
+                    <fullName>Bangkok (BKK)</fullName>
+                    <default>false</default>
+                    <label>Bangkok (BKK)</label>
+                </value>
+                <value>
+                    <fullName>Belagavi (IXG)</fullName>
+                    <default>false</default>
+                    <label>Belagavi (IXG)</label>
+                </value>
+                <value>
+                    <fullName>Bengaluru (BLR)</fullName>
+                    <default>false</default>
+                    <label>Bengaluru (BLR)</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh (IXC)</fullName>
+                    <default>false</default>
+                    <label>Chandigarh (IXC)</label>
+                </value>
+                <value>
+                    <fullName>Chennai (MAA)</fullName>
+                    <default>false</default>
+                    <label>Chennai (MAA)</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore (CJB)</fullName>
+                    <default>false</default>
+                    <label>Coimbatore (CJB)</label>
+                </value>
+                <value>
+                    <fullName>Colombo (CMB)</fullName>
+                    <default>false</default>
+                    <label>Colombo (CMB)</label>
+                </value>
+                <value>
+                    <fullName>Dehradun (DED)</fullName>
+                    <default>false</default>
+                    <label>Dehradun (DED)</label>
+                </value>
+                <value>
+                    <fullName>Delhi (DEL)</fullName>
+                    <default>false</default>
+                    <label>Delhi (DEL)</label>
+                </value>
+                <value>
+                    <fullName>Dhaka(DAC)</fullName>
+                    <default>false</default>
+                    <label>Dhaka(DAC)</label>
+                </value>
+                <value>
+                    <fullName>Dharamshala (DHM)</fullName>
+                    <default>false</default>
+                    <label>Dharamshala (DHM)</label>
+                </value>
+                <value>
+                    <fullName>Dubai (DXB)</fullName>
+                    <default>false</default>
+                    <label>Dubai (DXB)</label>
+                </value>
+                <value>
+                    <fullName>Goa (GOI)</fullName>
+                    <default>false</default>
+                    <label>Goa (GOI)</label>
+                </value>
+                <value>
+                    <fullName>Gorakhpur (GOP)</fullName>
+                    <default>false</default>
+                    <label>Gorakhpur (GOP)</label>
+                </value>
+                <value>
+                    <fullName>Guwahati (GAU)</fullName>
+                    <default>false</default>
+                    <label>Guwahati (GAU)</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad (HYD)</fullName>
+                    <default>false</default>
+                    <label>Hyderabad (HYD)</label>
+                </value>
+                <value>
+                    <fullName>Jabalpur (JLR)</fullName>
+                    <default>false</default>
+                    <label>Jabalpur (JLR)</label>
+                </value>
+                <value>
+                    <fullName>Jaipur (JAI)</fullName>
+                    <default>false</default>
+                    <label>Jaipur (JAI)</label>
+                </value>
+                <value>
+                    <fullName>Jammu (IXJ)</fullName>
+                    <default>false</default>
+                    <label>Jammu (IXJ)</label>
+                </value>
+                <value>
+                    <fullName>Jodhpur (JDH)</fullName>
+                    <default>false</default>
+                    <label>Jodhpur (JDH)</label>
+                </value>
+                <value>
+                    <fullName>Kabul (KBL)</fullName>
+                    <default>false</default>
+                    <label>Kabul (KBL)</label>
+                </value>
+                <value>
+                    <fullName>Kochi (COK)</fullName>
+                    <default>false</default>
+                    <label>Kochi (COK)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata (CCU)</fullName>
+                    <default>false</default>
+                    <label>Kolkata (CCU)</label>
+                </value>
+                <value>
+                    <fullName>Kozhikode (CCJ)</fullName>
+                    <default>false</default>
+                    <label>Kozhikode (CCJ)</label>
+                </value>
+                <value>
+                    <fullName>Madurai (IXM)</fullName>
+                    <default>false</default>
+                    <label>Madurai (IXM)</label>
+                </value>
+                <value>
+                    <fullName>Male (MLE)</fullName>
+                    <default>false</default>
+                    <label>Male (MLE)</label>
+                </value>
+                <value>
+                    <fullName>Mangalore (IXE)</fullName>
+                    <default>false</default>
+                    <label>Mangalore (IXE)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai (BOM)</fullName>
+                    <default>false</default>
+                    <label>Mumbai (BOM)</label>
+                </value>
+                <value>
+                    <fullName>Muscat (MCT)</fullName>
+                    <default>false</default>
+                    <label>Muscat (MCT)</label>
+                </value>
+                <value>
+                    <fullName>Port Blair (IXZ)</fullName>
+                    <default>false</default>
+                    <label>Port Blair (IXZ)</label>
+                </value>
+                <value>
+                    <fullName>Pune (PNQ)</fullName>
+                    <default>false</default>
+                    <label>Pune (PNQ)</label>
+                </value>
+                <value>
+                    <fullName>Rajahmundry (RJA)</fullName>
+                    <default>false</default>
+                    <label>Rajahmundry (RJA)</label>
+                </value>
+                <value>
+                    <fullName>Silchar (IXS)</fullName>
+                    <default>false</default>
+                    <label>Silchar (IXS)</label>
+                </value>
+                <value>
+                    <fullName>Srinagar (SXR)</fullName>
+                    <default>false</default>
+                    <label>Srinagar (SXR)</label>
+                </value>
+                <value>
+                    <fullName>Tirupati (TIR)</fullName>
+                    <default>false</default>
+                    <label>Tirupati (TIR)</label>
+                </value>
+                <value>
+                    <fullName>Trivandrum (TRV)</fullName>
+                    <default>false</default>
+                    <label>Trivandrum (TRV)</label>
+                </value>
+                <value>
+                    <fullName>Tuticorin (TCR)</fullName>
+                    <default>false</default>
+                    <label>Tuticorin (TCR)</label>
+                </value>
+                <value>
+                    <fullName>Udaipur (UDR)</fullName>
+                    <default>false</default>
+                    <label>Udaipur (UDR)</label>
+                </value>
+                <value>
+                    <fullName>Varanasi (VNS)</fullName>
+                    <default>false</default>
+                    <label>Varanasi (VNS)</label>
+                </value>
+                <value>
+                    <fullName>Vijayawada (VGA)</fullName>
+                    <default>false</default>
+                    <label>Vijayawada (VGA)</label>
+                </value>
+                <value>
+                    <fullName>Vishkhapatnam (VTZ)</fullName>
+                    <default>false</default>
+                    <label>Vishkhapatnam (VTZ)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Airport_of_Origin__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(BIR__r.Airport1__r.Name!=NULL,BIR__r.Airport1__r.Name,TEXT(BIR__r.Arrival_Station__c))</formula>
+        <label>Airport of Origin</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BIR_Tracers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BIR_Origin_Station__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.Airport1__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BIR Origin Station</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BIR_Physical_Form_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.BIR_Physical_Form_No__c</formula>
+        <label>BIR Physical Form No.</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BIR_Tracer_No__c</fullName>
+        <displayFormat>{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>BIR Tracer No.</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>BIR__c</fullName>
+        <externalId>false</externalId>
+        <label>Case No.</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>BIR Tracers</relationshipLabel>
+        <relationshipName>BIR_Tracers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Baggage_Color__c</fullName>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Text( Baggage_Detail__r.Baggage_Color__c ),  Baggage_Detail__r.Other_Baggage_Color__c )</formula>
+        <label>Baggage Color</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Baggage_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Baggage Detail</label>
+        <referenceTo>Baggage_Detail__c</referenceTo>
+        <relationshipLabel>BIR Tracers</relationshipLabel>
+        <relationshipName>BIR_Tracers</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Baggage_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Text( Baggage_Detail__r.Baggage_Type__c ),  Baggage_Detail__r.Other_Baggage_Type__c )</formula>
+        <label>Baggage Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Baggage__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.Baggage_Tag__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Baggage #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Brand_name_of_Baggage__c</fullName>
+        <externalId>false</externalId>
+        <formula>Baggage_Detail__r.Brand_name_of_Suitcase__c</formula>
+        <label>Brand name of Baggage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>My_Airport__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Airport__c) =  TEXT($User.Airport__c)</formula>
+        <label>My Airport ?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.Owner:User.FirstName &amp;&apos; &apos;&amp; BIR__r.Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PNR_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.PNR_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PNR No.</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Case_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.CaseNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related Case Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Found</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>Found</label>
+                </value>
+                <value>
+                    <fullName>Not Found</fullName>
+                    <color>#CC0000</color>
+                    <default>false</default>
+                    <label>Not Found</label>
+                </value>
+                <value>
+                    <fullName>Not Responded</fullName>
+                    <color>#999999</color>
+                    <default>true</default>
+                    <label>Not Responded</label>
+                </value>
+                <value>
+                    <fullName>Similar Match Found</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Similar Match Found</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tracer_sent_from_My_Airport__c</fullName>
+        <externalId>false</externalId>
+        <formula>BIR__r.Airport1__r.Name ==  TEXT($User.Airport__c)</formula>
+        <label>Tracer sent from My Airport?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>BIR Tracer</label>
+    <listViews>
+        <fullName>All_BIR_Tracers</fullName>
+        <columns>NAME</columns>
+        <columns>BIR__c</columns>
+        <columns>PNR_No__c</columns>
+        <columns>BIR_Physical_Form_No__c</columns>
+        <columns>Airport__c</columns>
+        <columns>Airport_of_Origin__c</columns>
+        <columns>Brand_name_of_Baggage__c</columns>
+        <columns>Baggage_Type__c</columns>
+        <columns>Baggage_Color__c</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All BIR Tracers</label>
+        <sharedTo>
+            <role>Chief_Administrative_Officer</role>
+            <role>Head_Ground_Services</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_BIR_Tracers</fullName>
+        <columns>NAME</columns>
+        <columns>BIR__c</columns>
+        <columns>PNR_No__c</columns>
+        <columns>BIR_Physical_Form_No__c</columns>
+        <columns>Airport_of_Origin__c</columns>
+        <columns>Brand_name_of_Baggage__c</columns>
+        <columns>Baggage_Type__c</columns>
+        <columns>Baggage_Color__c</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>My_Airport__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Open BIR Tracers</label>
+        <sharedTo>
+            <role>Chief_Administrative_Officer</role>
+            <role>Head_Ground_Services</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_BIR_Tracers</fullName>
+        <columns>NAME</columns>
+        <columns>BIR__c</columns>
+        <columns>PNR_No__c</columns>
+        <columns>BIR_Physical_Form_No__c</columns>
+        <columns>Airport__c</columns>
+        <columns>Brand_name_of_Baggage__c</columns>
+        <columns>Baggage_Type__c</columns>
+        <columns>Baggage_Color__c</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>My_Airport__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My BIR Tracers</label>
+        <sharedTo>
+            <role>Airport_Manager</role>
+            <role>Duty_Manager</role>
+            <role>Duty_Officer</role>
+            <role>Sr_CSE_CSE_Tr_CSE</role>
+            <role>Supervisor</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_BIR_Tracers</fullName>
+        <columns>NAME</columns>
+        <columns>BIR__c</columns>
+        <columns>PNR_No__c</columns>
+        <columns>BIR_Physical_Form_No__c</columns>
+        <columns>Airport_of_Origin__c</columns>
+        <columns>Brand_name_of_Baggage__c</columns>
+        <columns>Baggage_Type__c</columns>
+        <columns>Baggage_Color__c</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Not Responded</value>
+        </filters>
+        <filters>
+            <field>My_Airport__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Open BIR Tracers</label>
+        <sharedTo>
+            <group>Airport_Staff</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Tracers_sent_from_My_Airport</fullName>
+        <columns>NAME</columns>
+        <columns>BIR__c</columns>
+        <columns>PNR_No__c</columns>
+        <columns>BIR_Physical_Form_No__c</columns>
+        <columns>Airport_of_Origin__c</columns>
+        <columns>Brand_name_of_Baggage__c</columns>
+        <columns>Baggage_Type__c</columns>
+        <columns>Baggage_Color__c</columns>
+        <columns>Status__c</columns>
+        <columns>Comments__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Tracer_sent_from_My_Airport__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Tracers sent from My Airport</label>
+        <sharedTo>
+            <role>Airport_Manager</role>
+            <role>Duty_Manager</role>
+            <role>Duty_Officer</role>
+            <role>Sr_CSE_CSE_Tr_CSE</role>
+            <role>Supervisor</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Record no.</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>BIR Tracers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>BIR__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Airport__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Comments__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>BIR__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Airport__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Comments__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>BIR__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Airport__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Comments__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>BIR__c</searchFilterFields>
+        <searchFilterFields>Airport__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchFilterFields>Comments__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>LAST_UPDATE</searchFilterFields>
+        <searchResultsAdditionalFields>BIR__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Airport__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Comments__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Airport_staff_can_update_the_BIR_Tracer</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    NOT(ISNEW()),
+    NOT(ISCHANGED( LastModifiedDate )),
+    Text( Airport__c ) != TEXT( $User.Airport__c )
+)</errorConditionFormula>
+        <errorMessage>You can update the BIR Tracer for your own airport only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Comments_is_mandatory_for_Similar_Match</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Status__c, &apos;Similar Match&apos;),
+ISBLANK(Comments__c)
+)</errorConditionFormula>
+        <errorDisplayField>Comments__c</errorDisplayField>
+        <errorMessage>Please enter the baggage details in comments.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_cannot_be_Not_Responded</fullName>
+        <active>true</active>
+        <description>User cannot leave status as - Not Responded</description>
+        <errorConditionFormula>AND(NOT(ISNEW()), ISPICKVAL(Status__c, &apos;Not Responded&apos;))</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Please update the Status.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

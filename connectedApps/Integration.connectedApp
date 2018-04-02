@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>deepak.raj@spicejet.com</contactEmail>
+    <label>Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:8080/</callbackUrl>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

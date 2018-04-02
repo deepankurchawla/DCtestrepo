@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>BIR_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>BIR Sent ?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BIR_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>BIR Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AHL</fullName>
+                    <default>false</default>
+                    <label>AHL</label>
+                </value>
+                <value>
+                    <fullName>DPR</fullName>
+                    <default>false</default>
+                    <label>DPR</label>
+                </value>
+                <value>
+                    <fullName>OHD</fullName>
+                    <default>false</default>
+                    <label>OHD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Baggage_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Baggage Color</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BE – Beige / Cream / Ivory</fullName>
+                    <default>false</default>
+                    <label>BE – Beige / Cream / Ivory</label>
+                </value>
+                <value>
+                    <fullName>BK – Black</fullName>
+                    <default>false</default>
+                    <label>BK – Black</label>
+                </value>
+                <value>
+                    <fullName>BN – Brown / Tan / Taupe / Bronze / Copper</fullName>
+                    <default>false</default>
+                    <label>BN – Brown / Tan / Taupe / Bronze / Copper</label>
+                </value>
+                <value>
+                    <fullName>BU – Blue / Turquoise</fullName>
+                    <default>false</default>
+                    <label>BU – Blue / Turquoise</label>
+                </value>
+                <value>
+                    <fullName>GN – Green / Olive / Jade</fullName>
+                    <default>false</default>
+                    <label>GN – Green / Olive / Jade</label>
+                </value>
+                <value>
+                    <fullName>GY – Grey / Silver / Aluminum</fullName>
+                    <default>false</default>
+                    <label>GY – Grey / Silver / Aluminum</label>
+                </value>
+                <value>
+                    <fullName>MC – Two or more solid colors, excluding trim</fullName>
+                    <default>false</default>
+                    <label>MC – Two or more solid colors, excluding trim</label>
+                </value>
+                <value>
+                    <fullName>PR – Print / Pattern / Floral / Spotted / Tapestry / Stripe / Plaid</fullName>
+                    <default>false</default>
+                    <label>PR – Print / Pattern / Floral / Spotted / Tapestry / Stripe / Plaid</label>
+                </value>
+                <value>
+                    <fullName>PU – Purple / Violet / Lilac</fullName>
+                    <default>false</default>
+                    <label>PU – Purple / Violet / Lilac</label>
+                </value>
+                <value>
+                    <fullName>RD – Red / Maroon / Pink / Mauve / Burgundy</fullName>
+                    <default>false</default>
+                    <label>RD – Red / Maroon / Pink / Mauve / Burgundy</label>
+                </value>
+                <value>
+                    <fullName>WT – White / Clear</fullName>
+                    <default>false</default>
+                    <label>WT – White / Clear</label>
+                </value>
+                <value>
+                    <fullName>YW – Yellow / Orange / Gold</fullName>
+                    <default>false</default>
+                    <label>YW – Yellow / Orange / Gold</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Baggage_Tag__c</fullName>
+        <externalId>false</externalId>
+        <label>Baggage Tag #</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Baggage_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Baggage Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Backpack/Rucksack</fullName>
+                    <default>false</default>
+                    <label>Backpack/Rucksack</label>
+                </value>
+                <value>
+                    <fullName>Box</fullName>
+                    <default>false</default>
+                    <label>Box</label>
+                </value>
+                <value>
+                    <fullName>Briefcase</fullName>
+                    <default>false</default>
+                    <label>Briefcase</label>
+                </value>
+                <value>
+                    <fullName>Document Case</fullName>
+                    <default>false</default>
+                    <label>Document Case</label>
+                </value>
+                <value>
+                    <fullName>Duffle/Sport Bag</fullName>
+                    <default>false</default>
+                    <label>Duffle/Sport Bag</label>
+                </value>
+                <value>
+                    <fullName>Expandable upright</fullName>
+                    <default>false</default>
+                    <label>Expandable upright</label>
+                </value>
+                <value>
+                    <fullName>Garment Bag/Suit Carrier</fullName>
+                    <default>false</default>
+                    <label>Garment Bag/Suit Carrier</label>
+                </value>
+                <value>
+                    <fullName>Horizontal design Hard Shell</fullName>
+                    <default>false</default>
+                    <label>Horizontal design Hard Shell</label>
+                </value>
+                <value>
+                    <fullName>Horizontal design suitcase</fullName>
+                    <default>false</default>
+                    <label>Horizontal design suitcase</label>
+                </value>
+                <value>
+                    <fullName>Horizontal design suitcase - Expandable</fullName>
+                    <default>false</default>
+                    <label>Horizontal design suitcase - Expandable</label>
+                </value>
+                <value>
+                    <fullName>Horizontal design suitcase – Non-expandable</fullName>
+                    <default>false</default>
+                    <label>Horizontal design suitcase – Non-expandable</label>
+                </value>
+                <value>
+                    <fullName>Lap Top/Overnight bag</fullName>
+                    <default>false</default>
+                    <label>Lap Top/Overnight bag</label>
+                </value>
+                <value>
+                    <fullName>Matted woven bag</fullName>
+                    <default>false</default>
+                    <label>Matted woven bag</label>
+                </value>
+                <value>
+                    <fullName>Military Style Bag</fullName>
+                    <default>false</default>
+                    <label>Military Style Bag</label>
+                </value>
+                <value>
+                    <fullName>Plastic/Laundry Bag</fullName>
+                    <default>false</default>
+                    <label>Plastic/Laundry Bag</label>
+                </value>
+                <value>
+                    <fullName>Storage Container</fullName>
+                    <default>false</default>
+                    <label>Storage Container</label>
+                </value>
+                <value>
+                    <fullName>Upright design</fullName>
+                    <default>false</default>
+                    <label>Upright design</label>
+                </value>
+                <value>
+                    <fullName>Upright design, combined hard and soft material</fullName>
+                    <default>false</default>
+                    <label>Upright design, combined hard and soft material</label>
+                </value>
+                <value>
+                    <fullName>Upright design, hard material</fullName>
+                    <default>false</default>
+                    <label>Upright design, hard material</label>
+                </value>
+                <value>
+                    <fullName>Upright design, Soft material</fullName>
+                    <default>false</default>
+                    <label>Upright design, Soft material</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Brand_name_of_Suitcase__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand name of Baggage</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Case No.</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Baggage Details</relationshipLabel>
+        <relationshipName>Baggage_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Contents__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>4 distinctive items</inlineHelpText>
+        <label>Contents</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Destination_on_Baggage_tag__c</fullName>
+        <externalId>false</externalId>
+        <label>Destination on Baggage tag</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agartala (IXA)</fullName>
+                    <default>false</default>
+                    <label>Agartala (IXA)</label>
+                </value>
+                <value>
+                    <fullName>Ahmedabad (AMD)</fullName>
+                    <default>false</default>
+                    <label>Ahmedabad (AMD)</label>
+                </value>
+                <value>
+                    <fullName>Aizawl (AJL)</fullName>
+                    <default>false</default>
+                    <label>Aizawl (AJL)</label>
+                </value>
+                <value>
+                    <fullName>Amritsar (ATQ)</fullName>
+                    <default>false</default>
+                    <label>Amritsar (ATQ)</label>
+                </value>
+                <value>
+                    <fullName>Bagdogra (IXB)</fullName>
+                    <default>false</default>
+                    <label>Bagdogra (IXB)</label>
+                </value>
+                <value>
+                    <fullName>Bangkok (BKK)</fullName>
+                    <default>false</default>
+                    <label>Bangkok (BKK)</label>
+                </value>
+                <value>
+                    <fullName>Belgaum (IXG)</fullName>
+                    <default>false</default>
+                    <label>Belgaum (IXG)</label>
+                </value>
+                <value>
+                    <fullName>Bengaluru (BLR)</fullName>
+                    <default>false</default>
+                    <label>Bengaluru (BLR)</label>
+                </value>
+                <value>
+                    <fullName>Chandigarh (IXC)</fullName>
+                    <default>false</default>
+                    <label>Chandigarh (IXC)</label>
+                </value>
+                <value>
+                    <fullName>Chennai (MAA)</fullName>
+                    <default>false</default>
+                    <label>Chennai (MAA)</label>
+                </value>
+                <value>
+                    <fullName>Coimbatore (CJB)</fullName>
+                    <default>false</default>
+                    <label>Coimbatore (CJB)</label>
+                </value>
+                <value>
+                    <fullName>Colombo (CMB)</fullName>
+                    <default>false</default>
+                    <label>Colombo (CMB)</label>
+                </value>
+                <value>
+                    <fullName>Dehradun (DED)</fullName>
+                    <default>false</default>
+                    <label>Dehradun (DED)</label>
+                </value>
+                <value>
+                    <fullName>Delhi (DEL)</fullName>
+                    <default>false</default>
+                    <label>Delhi (DEL)</label>
+                </value>
+                <value>
+                    <fullName>Dharamshala (DHM)</fullName>
+                    <default>false</default>
+                    <label>Dharamshala (DHM)</label>
+                </value>
+                <value>
+                    <fullName>Dubai (DXB)</fullName>
+                    <default>false</default>
+                    <label>Dubai (DXB)</label>
+                </value>
+                <value>
+                    <fullName>Goa (GOI)</fullName>
+                    <default>false</default>
+                    <label>Goa (GOI)</label>
+                </value>
+                <value>
+                    <fullName>Gorakhpur (GOP)</fullName>
+                    <default>false</default>
+                    <label>Gorakhpur (GOP)</label>
+                </value>
+                <value>
+                    <fullName>Guwahati (GAU)</fullName>
+                    <default>false</default>
+                    <label>Guwahati (GAU)</label>
+                </value>
+                <value>
+                    <fullName>Hyderabad (HYD)</fullName>
+                    <default>false</default>
+                    <label>Hyderabad (HYD)</label>
+                </value>
+                <value>
+                    <fullName>Jabalpur (JLR)</fullName>
+                    <default>false</default>
+                    <label>Jabalpur (JLR)</label>
+                </value>
+                <value>
+                    <fullName>Jaipur (JAI)</fullName>
+                    <default>false</default>
+                    <label>Jaipur (JAI)</label>
+                </value>
+                <value>
+                    <fullName>Jammu (IXJ)</fullName>
+                    <default>false</default>
+                    <label>Jammu (IXJ)</label>
+                </value>
+                <value>
+                    <fullName>Kabul (KBL)</fullName>
+                    <default>false</default>
+                    <label>Kabul (KBL)</label>
+                </value>
+                <value>
+                    <fullName>Kochi (COK)</fullName>
+                    <default>false</default>
+                    <label>Kochi (COK)</label>
+                </value>
+                <value>
+                    <fullName>Kolkata (CCU)</fullName>
+                    <default>false</default>
+                    <label>Kolkata (CCU)</label>
+                </value>
+                <value>
+                    <fullName>Kozhikode (CCJ)</fullName>
+                    <default>false</default>
+                    <label>Kozhikode (CCJ)</label>
+                </value>
+                <value>
+                    <fullName>Madurai (IXM)</fullName>
+                    <default>false</default>
+                    <label>Madurai (IXM)</label>
+                </value>
+                <value>
+                    <fullName>Male (MLE)</fullName>
+                    <default>false</default>
+                    <label>Male (MLE)</label>
+                </value>
+                <value>
+                    <fullName>Mangalore (IXE)</fullName>
+                    <default>false</default>
+                    <label>Mangalore (IXE)</label>
+                </value>
+                <value>
+                    <fullName>Mumbai (BOM)</fullName>
+                    <default>false</default>
+                    <label>Mumbai (BOM)</label>
+                </value>
+                <value>
+                    <fullName>Muscat (MCT)</fullName>
+                    <default>false</default>
+                    <label>Muscat (MCT)</label>
+                </value>
+                <value>
+                    <fullName>Port Blair (IXZ)</fullName>
+                    <default>false</default>
+                    <label>Port Blair (IXZ)</label>
+                </value>
+                <value>
+                    <fullName>Pune (PNQ)</fullName>
+                    <default>false</default>
+                    <label>Pune (PNQ)</label>
+                </value>
+                <value>
+                    <fullName>Rajahmundry (RJA)</fullName>
+                    <default>false</default>
+                    <label>Rajahmundry (RJA)</label>
+                </value>
+                <value>
+                    <fullName>Silchar (IXS)</fullName>
+                    <default>false</default>
+                    <label>Silchar (IXS)</label>
+                </value>
+                <value>
+                    <fullName>Srinagar (SXR)</fullName>
+                    <default>false</default>
+                    <label>Srinagar (SXR)</label>
+                </value>
+                <value>
+                    <fullName>Tirupati (TIR)</fullName>
+                    <default>false</default>
+                    <label>Tirupati (TIR)</label>
+                </value>
+                <value>
+                    <fullName>Tuticorin (TCR)</fullName>
+                    <default>false</default>
+                    <label>Tuticorin (TCR)</label>
+                </value>
+                <value>
+                    <fullName>Udaipur (UDR)</fullName>
+                    <default>false</default>
+                    <label>Udaipur (UDR)</label>
+                </value>
+                <value>
+                    <fullName>Varanasi (VNS)</fullName>
+                    <default>false</default>
+                    <label>Varanasi (VNS)</label>
+                </value>
+                <value>
+                    <fullName>Vijayawada (VGA)</fullName>
+                    <default>false</default>
+                    <label>Vijayawada (VGA)</label>
+                </value>
+                <value>
+                    <fullName>Vishkhapatnam (VTZ)</fullName>
+                    <default>false</default>
+                    <label>Vishkhapatnam (VTZ)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Baggage_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Baggage Color</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Baggage_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Baggage Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Damage__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Damage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>BIR_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Back</fullName>
+                    <default>false</default>
+                    <label>Back</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Front</fullName>
+                    <default>false</default>
+                    <label>Front</label>
+                </value>
+                <value>
+                    <fullName>Major</fullName>
+                    <default>false</default>
+                    <label>Major</label>
+                </value>
+                <value>
+                    <fullName>Minor</fullName>
+                    <default>false</default>
+                    <label>Minor</label>
+                </value>
+                <value>
+                    <fullName>Sides</fullName>
+                    <default>false</default>
+                    <label>Sides</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Back</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Complete</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Front</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Major</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Minor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DPR</controllingFieldValue>
+                <valueName>Sides</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Weight_of_Missing_Baggage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In Kg</inlineHelpText>
+        <label>Weight of Missing Baggage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Baggage Detail</label>
+    <nameField>
+        <displayFormat>BD-{00000}</displayFormat>
+        <label>Record No.</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Baggage Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Contents_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    OR(
+        TEXT(BIR_Type__c) == &apos;AHL&apos;,
+        TEXT(BIR_Type__c) == &apos;DPR&apos;
+    ),
+    ISBLANK(Contents__c)
+)</errorConditionFormula>
+        <errorDisplayField>Contents__c</errorDisplayField>
+        <errorMessage>Contents is mandatory</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Other_Baggage_Color_is_mandatory</fullName>
+        <active>true</active>
+        <description>Other Baggage Color is mandatory if Baggage Color is Others</description>
+        <errorConditionFormula>AND(
+    TEXT( Baggage_Color__c ) == &apos;Other&apos;,
+    ISBLANK( Other_Baggage_Color__c )
+)</errorConditionFormula>
+        <errorDisplayField>Other_Baggage_Color__c</errorDisplayField>
+        <errorMessage>Other Baggage Color  is mandatory if Baggage Color is others</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Other_Baggage_Type_is_mandatory</fullName>
+        <active>true</active>
+        <description>Other Baggage Type is mandatory if Baggage type is Others</description>
+        <errorConditionFormula>AND(
+    TEXT( Baggage_Type__c ) == &apos;Other&apos;,
+    ISBLANK( Other_Baggage_Type__c )
+)</errorConditionFormula>
+        <errorDisplayField>Other_Baggage_Type__c</errorDisplayField>
+        <errorMessage>Other Baggage Type is mandatory if Baggage Type is others</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Baggage_Weight_vs_Missing_Weight</fullName>
+        <active>false</active>
+        <description>Weight of Missing Baggage cannot be more than the Total Baggage Weight.</description>
+        <errorConditionFormula>Case_No__r.Total_Baggage_Weight__c &lt; Case_No__r.Total_Weight_of_Missing_Baggage__c</errorConditionFormula>
+        <errorMessage>Weight of all the Missing Baggage cannot be more than the Total Baggage Weight.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Pieces_vs_Missing_Pieces</fullName>
+        <active>false</active>
+        <description>Pieces of Missing Baggage cannot be more than Total Pieces Checked In.</description>
+        <errorConditionFormula>Case_No__r.Total_Pieces_Checked_In__c &lt;  Case_No__r.Number_of_Missing_Baggage__c</errorConditionFormula>
+        <errorMessage>Pieces of all Missing Baggage cannot be more than the Total Pieces Checked In.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Weight_should_be_same</fullName>
+        <active>false</active>
+        <description>Weight of Missing Baggage should be same as Total baggage if same no. of pieces are missing.</description>
+        <errorConditionFormula>Case_No__r.Number_of_Missing_Baggage__c == Case_No__r.Total_Pieces_Checked_In__c &amp;&amp; Case_No__r.Total_Baggage_Weight__c &lt;&gt;  Case_No__r.Total_Weight_of_Missing_Baggage__c</errorConditionFormula>
+        <errorMessage>Weight of all the Missing Baggage must be same as Total Baggage Weight if the no. of missing pieces is same as the total checked In pieces.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

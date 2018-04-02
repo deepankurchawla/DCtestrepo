@@ -1,0 +1,8 @@
+<apex:page standardController="BIR_Tracer__c">
+    <script>
+        window.onload = function() {
+            alert('Please create BIR Tracer from the Case record');
+            window.open('https://na30.salesforce.com/a0J/o', '_self');
+        };
+    </script>
+</apex:page>

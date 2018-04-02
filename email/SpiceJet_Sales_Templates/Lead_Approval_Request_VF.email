@@ -1,0 +1,31 @@
+<messaging:emailTemplate subject="Approval Request for {!relatedTo.Company}" recipientType="User" relatedToType="Lead">
+<messaging:htmlEmailBody >
+
+Hi, 
+<br/>
+<br/>
+{!relatedTo.Owner.Name} has requested an approval for the registration of agency - {!relatedTo.Company}. 
+<br/>
+<br/>
+Agency details are as follows -
+<br/>
+<br/>
+     <table border="1" style="border-collapse: collapse;">
+            <apex:repeat value="{!$ObjectType.Lead.FieldSets.Travel_Agency_Fields}" var="f"> 
+            <tr>
+                <td style="padding: 4px;"><b>{!f.Label}</b></td>
+                <td style="padding: 4px;">{!relatedTo[f]}</td>
+            </tr>
+            </apex:repeat> 
+        </table>
+<br/>
+<br/>
+
+Follow this link for additional details - <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Company}</apex:outputlink>
+<br/>
+<br/>
+<strong>Note:</strong> To approve or reject this item, reply to this email with the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO in the first line of the email message. You can also add comments on the second line. The comments will be stored with the approval request in Salesforce CRM.
+<br/>
+<b>Note: </b> This is system generated email.
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

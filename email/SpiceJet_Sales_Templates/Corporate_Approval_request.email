@@ -1,0 +1,5 @@
+Hi,
+
+{!Lead.OwnerFullName} has requested for the Approval for Corporate: {!Lead.Company}
+
+Detail Link : {!Lead.Link}

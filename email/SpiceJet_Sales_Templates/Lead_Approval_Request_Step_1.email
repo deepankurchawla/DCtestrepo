@@ -1,0 +1,31 @@
+<messaging:emailTemplate subject="Approval Request for {!relatedTo.Company}" recipientType="User" relatedToType="Lead">
+<messaging:htmlEmailBody >
+
+Hi, 
+<br/>
+<br/>
+{!relatedTo.Owner.Name} has requested an approval for the registration of agency - {!relatedTo.Company}. 
+<br/>
+<br/>
+Agency details are as follows -
+<br/>
+<br/>
+     <table border="1" style="border-collapse: collapse;">
+            <apex:repeat value="{!$ObjectType.Lead.FieldSets.Travel_Agency_Fields}" var="f"> 
+            <tr>
+                <td style="padding: 4px;"><b>{!f.Label}</b></td>
+                <td style="padding: 4px;">{!relatedTo[f]}</td>
+            </tr>
+            </apex:repeat> 
+        </table>
+<br/>
+<br/>
+
+Follow this link for additional details - <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Company}</apex:outputlink>
+<br/>
+Also, update the Navitaire Id for the Travel Agency/Corporate.
+<br/>
+<br/>
+<b>Note: </b> This is system generated email.
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
