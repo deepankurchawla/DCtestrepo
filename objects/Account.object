@@ -144,10 +144,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
         <fullName>Business_Registration_No__c</fullName>
         <externalId>false</externalId>
         <label>Business Registration No.</label>

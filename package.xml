@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>40.0</version>
+    <version>41.0</version>
     <types>
         <members>AccountTriggerHandler</members>
         <members>AccountTriggerTest</members>
@@ -202,7 +202,6 @@
         <members>Account.Agreement_Status__c</members>
         <members>Account.AnnualRevenue</members>
         <members>Account.Approx_Annual_Travel_Spend_Last_Year__c</members>
-        <members>Account.BillingAddress</members>
         <members>Account.Business_Registration_No__c</members>
         <members>Account.Channel__c</members>
         <members>Account.City__c</members>
@@ -297,34 +296,6 @@
         <members>Activity.Location__c</members>
         <members>Activity.Owner_Zone__c</members>
         <members>Activity.Task_Completed_On__c</members>
-        <members>AgentWork.AcceptDateTime</members>
-        <members>AgentWork.ActiveTime</members>
-        <members>AgentWork.AgentCapacityWhenDeclined</members>
-        <members>AgentWork.CancelDateTime</members>
-        <members>AgentWork.CapacityPercentage</members>
-        <members>AgentWork.CapacityWeight</members>
-        <members>AgentWork.CloseDateTime</members>
-        <members>AgentWork.DeclineDateTime</members>
-        <members>AgentWork.DeclineReason</members>
-        <members>AgentWork.HandleTime</members>
-        <members>AgentWork.IsTransfer</members>
-        <members>AgentWork.LASessionId</members>
-        <members>AgentWork.OriginalQueueId</members>
-        <members>AgentWork.OwnerId</members>
-        <members>AgentWork.PendingServiceRoutingId</members>
-        <members>AgentWork.PushTimeout</members>
-        <members>AgentWork.PushTimeoutDateTime</members>
-        <members>AgentWork.RequestDateTime</members>
-        <members>AgentWork.RoutingModel</members>
-        <members>AgentWork.RoutingPriority</members>
-        <members>AgentWork.RoutingType</members>
-        <members>AgentWork.ServiceChannelId</members>
-        <members>AgentWork.ShouldSkipCapacityCheck</members>
-        <members>AgentWork.SpeedToAnswer</members>
-        <members>AgentWork.Status</members>
-        <members>AgentWork.StatusSequence</members>
-        <members>AgentWork.UserId</members>
-        <members>AgentWork.WorkItemId</members>
         <members>Airport_Name__c.Name__c</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
@@ -1264,7 +1235,6 @@
         <members>Account</members>
         <members>AccountContactRole</members>
         <members>Activity</members>
-        <members>AgentWork</members>
         <members>Airport_Name__c</members>
         <members>Asset</members>
         <members>AssetRelationship</members>
